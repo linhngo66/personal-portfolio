@@ -1,17 +1,27 @@
 project:
   type: website
+  output-dir: docs
 
 website:
-  title: "blog-template"
+  title: "Linh Ngo"
   navbar:
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "Blog"
+        href: blog.qmd
     right:
-      - about.qmd
       - icon: github
-        href: https://github.com/etc5523-2022
+        aria-label: GitHub
+        href: https://github.com/linhngo66/
+      - icon: linkedin
+        aria-label: LinkedIn
+        href: https://www.linkedin.com/in/thuylinhngo/
+      - icon: envelope
+        href: mailto:linhngo66@gmail.com
 format:
   html:
-    theme: cosmo
+    theme: litera
     css: styles.css
-
 
 

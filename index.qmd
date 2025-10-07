@@ -1,14 +1,44 @@
 ---
-title: "ETC5523 Blog Assessment"
-listing:
-  contents: posts
-  sort: "date desc"
-  type: default
-  categories: true
-  sort-ui: false
-  filter-ui: false
-page-layout: full
-title-block-banner: true
+title: "Linh Ngo"
+image: profile.jpg
+about:
+  template: trestles
+  image-shape: round
+  image-width: 15em
+  links:
+    - text: Github
+      icon: github
+      href: https://github.com/linhngo66/
+    - text: LinkedIn
+      icon: linkedin
+      href: https://www.linkedin.com/in/thuylinhngo/
+    - text: Email
+      icon: envelope
+      href: mailto:linhngo66@gmail.com
 ---
+
+## Hi, I’m Linh 
+
+I build **data systems and business processes that connect business strategy with execution** — from designing analytics pipelines, data models, and dashboards that drive measurable impact, to building and optimizing team operations. 
+
+### What I've done
+
+My work sits at the intersection of **data analytics, analytics engineering, and business strategy**.  
+
+I’ve built and scaled analytics in **fintech, SaaS, and consulting** — from optimizing data pipelines and implementing self-service analytics at a U.S. tech startup, to leading growth and customer operations at a Vietnamese fintech, and supporting a business transformation for a major bank client.
+
+### What I’m focused on now
+
+- Pursuing a **Master of Business Analytics at Monash University** to sharpen my analytical skills
+- Diving deeper into **data engineering and pipeline design** - exploring how modern data stacks can bridge the gap between technical systems and business impact
+- Optimizing my daily routine for maximal health, mental clarity and emotion regulation
+
+### Tech Stack  
+
+- **Languages:** SQL, Python, R 
+- **Tools:** dbt, Airbyte, Fivetran, Airflow, Git, Power BI, Tableau, Google Data Studio
+- **Cloud:** Snowflake, Azure Data Factory
+- **Skills:** ELT & data modelling, CI/CD for pipelines, data quality monitoring, and metric standardization  
+
 
 

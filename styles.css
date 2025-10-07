@@ -1,4 +1,67 @@
-/* css styles */
-.navbar-dark, .quarto-title-banner {
-  background-color: #006DAE;
+/* ---------------- NABBAR COLOR ---------------- */
+
+.navbar-brand,
+.navbar-nav .nav-link {
+  color:rgb(25, 24, 24) !important;
 }
+
+.navbar-brand:hover,
+.navbar-nav .nav-link:hover {
+  color:rgb(25, 24, 24) !important;
+}
+
+.navbar-nav .nav-link.active {
+  color:rgb(25, 24, 24) !important;
+  font-weight: 600;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(25, 24, 24)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.quarto-navbar-tools .quarto-color-scheme-toggle, .quarto-navbar-tools .quarto-search-button {
+  color: rgb(25, 24, 24) !important;
+}
+
+/* ---------------- NAVBAR SIZE ---------------- */
+
+/* Increase site title font size */
+.navbar-brand {
+  font-size: 1.25rem !important;  /* default ~1rem */
+  font-weight: 600;
+}
+
+/* Increase nav link size */
+.navbar-nav .nav-link {
+  font-size: 1.05rem !important;  /* default ~0.9rem */
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
+/* Make the color-scheme toggle and search icon larger */
+.quarto-navbar-tools .quarto-color-scheme-toggle,
+.quarto-navbar-tools .quarto-search-button {
+  font-size: 1.3rem !important;  /* default ~1rem */
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
+/* Enlarge the hamburger (menu) icon on small screens */
+.navbar-toggler {
+  padding: 0.6rem !important;
+}
+.navbar-toggler-icon {
+  width: 1.6em !important;
+  height: 1.6em !important;
+}
+
+/* ---------------- HOME PAGE ---------------- */
+
+/* Adjust the cropping of the About page image */
+.about-entity img {
+  object-fit: cover;
+  object-position: center 10%;   /* move image focus up (default is 50%) */
+}
+
+
+
