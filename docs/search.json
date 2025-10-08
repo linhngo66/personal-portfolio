@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Linh Ngo",
     "section": "",
-    "text": "No matching items"
+    "text": "I build data systems and business processes that connect business strategy with execution — from designing analytics pipelines, data models, and dashboards that drive measurable impact, to building and optimizing team operations.\n\n\nMy work sits at the intersection of data analytics, analytics engineering, and business strategy.\nI’ve built and scaled analytics in fintech, SaaS, and consulting — from optimizing data pipelines and implementing self-service analytics at a U.S. tech startup, to leading growth and customer operations at a Vietnamese fintech, and supporting a business transformation for a major bank client.\n\n\n\n\nPursuing a Master of Business Analytics at Monash University to sharpen my analytical skills\nDiving deeper into data engineering and pipeline design - exploring how modern data stacks can bridge the gap between technical systems and business impact\nOptimizing my daily routine for maximal health, mental clarity and emotion regulation\n\n\n\n\n\nLanguages: SQL, Python, R\nTools: dbt, Airbyte, Fivetran, Airflow, Git, Power BI, Tableau, Google Data Studio\nCloud: Snowflake, Azure Data Factory\nSkills: ELT & data modelling, CI/CD for pipelines, data quality monitoring, and metric standardization"
   },
   {
     "objectID": "posts/welcome/index.html",
@@ -19,5 +19,26 @@
     "title": "About",
     "section": "",
     "text": "This is a blog template for the ETC5523 Communicating with Data assessment at Monash University."
+  },
+  {
+    "objectID": "index.html#hi-im-linh",
+    "href": "index.html#hi-im-linh",
+    "title": "Linh Ngo",
+    "section": "",
+    "text": "I build data systems and business processes that connect business strategy with execution — from designing analytics pipelines, data models, and dashboards that drive measurable impact, to building and optimizing team operations.\n\n\nMy work sits at the intersection of data analytics, analytics engineering, and business strategy.\nI’ve built and scaled analytics in fintech, SaaS, and consulting — from optimizing data pipelines and implementing self-service analytics at a U.S. tech startup, to leading growth and customer operations at a Vietnamese fintech, and supporting a business transformation for a major bank client.\n\n\n\n\nPursuing a Master of Business Analytics at Monash University to sharpen my analytical skills\nDiving deeper into data engineering and pipeline design - exploring how modern data stacks can bridge the gap between technical systems and business impact\nOptimizing my daily routine for maximal health, mental clarity and emotion regulation\n\n\n\n\n\nLanguages: SQL, Python, R\nTools: dbt, Airbyte, Fivetran, Airflow, Git, Power BI, Tableau, Google Data Studio\nCloud: Snowflake, Azure Data Factory\nSkills: ELT & data modelling, CI/CD for pipelines, data quality monitoring, and metric standardization"
+  },
+  {
+    "objectID": "posts/a2/index.html",
+    "href": "posts/a2/index.html",
+    "title": "Welcome To My Blog Template",
+    "section": "",
+    "text": "This is the first post in a Quarto blog. Welcome!"
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "No matching items"
   }
 ]

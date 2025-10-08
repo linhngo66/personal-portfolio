@@ -31,7 +31,7 @@ I’ve built and scaled analytics in **fintech, SaaS, and consulting** — from 
 
 - Pursuing a **Master of Business Analytics at Monash University** to sharpen my analytical skills
 - Diving deeper into **data engineering and pipeline design** - exploring how modern data stacks can bridge the gap between technical systems and business impact
-- Optimizing my daily routine for maximal health, mental clarity and emotion regulation
+- Optimizing my daily routine for maximum health, mental clarity and emotional regulation
 
 ### Tech Stack  
 
