@@ -1,0 +1,42 @@
+---
+title: "Welcome To My Blog Template"
+author: "Linh Ngo"
+---
+
+Hospitals are designed to heal, yet many patients leave them sicker than when they arrived — not because of their original illness, but because of healthcare-associated infections (HAIs). These infections arise during hospital care and are a major cause of avoidable deaths, disability, and healthcare costs across Europe. Germany is known for its advanced medical infrastructure and high hygiene standards. Yet, data from Zacher et al. (2019) suggest that its infection burden may be higher than the European average. 
+
+I'm exploring how severe HAIs-related health burden actually is, and what factors might explain the paradox of high infection rates in a strong healthcare system through a deep-dive into the paper "Application of a new methodology and R package reveals a high burden of healthcare-associated infections (HAI) in Germany compared to the average in the European Union/European Economic Area, 2011 to 2012" by Zacher et al. (2019).
+
+## What is healthcare-associated infection (HAI)?
+
+HAI is a term used to describe infectious diseases that are associated with hospitalizations. These infections can arise from a variety of sources, including infections from patients, staff, and equipment. 
+
+This study focuses on five most common HAIs, namely:
+
+- Healthcare-associated Clostridioides difficile infection (CDI)
+- Healthcare-associated pneumonia (HAP)
+- Healthcare-associated primary bloodstream infection (BSI)
+- Healthcare-associated urinary tract infection (UTI)
+- Surgical site infection (SSI)
+
+## How HAIs-related health burden is measured?
+
+The author measures HAIs-related health burden through 3 key metrics:
+
+- The number of HAIs incidence
+- The number of deaths attributed to each HAI
+- The number of disability-adjusted life years (DALYs) due to HAIs: DALYs is a measure of years of lost healthy life, combining years of life lost (YLLs) with years lived with disability (YLDs). This metric enables a common ground to rank and compare the health burden of different HAIs.
+
+Data used in this analysis is collected from European Centre for Disease Prevention and Control (ECDC) Point Prevalence Survey (2011–2012). 
+
+Analysis method is a built-upon from the Burden of Communicable Diseases in Europe (BCoDE) framework, yet enabling a more reliable estimation of HAIs-related health burden in cases of smaller sample size and varying survey protocols. You can find out more about their methodology through the accompanying R packages [BHAI](https://cran.r-project.org/web/packages/BHAI/index.html).
+
+## What does the data reveal?
+
+A substantial and concerning burden of HAIs is found in Germany, especially when benchmarked against other European countries, and other communicable diseases. 
+
+### Overall HAIs-related health burden
+
+![](images/table1.png)
+
+The study estimated 478,222 cases of the five selected HAIs in Germany, leading to 16,245 attributable deaths and 248,920 DALYs.
