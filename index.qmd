@@ -11,7 +11,7 @@ about:
       href: https://github.com/linhngo66/
     - text: LinkedIn
       icon: linkedin
-      href: https://www.linkedin.com/in/thuylinhngo/
+      href: https://www.linkedin.com/in/thuy-linh-ngo/
     - text: Email
       icon: envelope
       href: mailto:linhngo66@gmail.com

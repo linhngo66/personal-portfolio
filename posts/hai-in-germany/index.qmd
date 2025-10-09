@@ -3,6 +3,7 @@ title: "Quantifying Healthcare-associated Infection in Germany: Research Reveals
 date: "10/09/2025"
 author: "Linh Ngo"
 category: "data report"
+image: "images/thumbnail.jpg"
 ---
 
 Hospitals are designed to heal, yet many patients leave them sicker than when they arrived — not because of their original illness, but because of healthcare-associated infections (HAIs). These infections arise during hospital care and are a major cause of avoidable deaths, disability, and healthcare costs across Europe. Germany is known for its advanced medical infrastructure and high hygiene standards. Yet, data from Zacher et al. (2019) suggest that its infection burden may be higher than the European average. 

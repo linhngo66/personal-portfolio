@@ -1,10 +1,8 @@
 [
   {
-    "listing": "/index.html",
-    "items": []
-  },
-  {
     "listing": "/blog.html",
-    "items": []
+    "items": [
+      "/posts/hai-in-germany/index.html"
+    ]
   }
 ]

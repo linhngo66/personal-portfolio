@@ -1,5 +1,12 @@
 [
   {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Quantifying Healthcare-associated Infection in Germany: Research Reveals Heavy Burden from Preventable Harm\n\n\n\n\n\n\n\n\n\n\n\nOct 9, 2025\n\n\nLinh Ngo\n\n\n\n\n\n\nNo matching items"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Linh Ngo",
@@ -7,67 +14,11 @@
     "text": "I build data systems and business processes that connect business strategy with execution — from designing analytics pipelines, data models, and dashboards that drive measurable impact, to building and optimizing team operations.\n\n\nMy work sits at the intersection of data analytics, analytics engineering, and business strategy.\nI’ve built and scaled analytics in fintech, SaaS, and consulting — from optimizing data pipelines and implementing self-service analytics at a U.S. tech startup, to leading growth and customer operations at a Vietnamese fintech, and supporting a business transformation for a major bank client.\n\n\n\n\nPursuing a Master of Business Analytics at Monash University to sharpen my analytical skills\nDiving deeper into data engineering and pipeline design - exploring how modern data stacks can bridge the gap between technical systems and business impact\nOptimizing my daily routine for maximum health, mental clarity and emotional regulation\n\n\n\n\n\nLanguages: SQL, Python, R\nTools: dbt, Airbyte, Fivetran, Airflow, Git, Power BI, Tableau, Google Data Studio\nCloud: Snowflake, Azure Data Factory\nSkills: ELT & data modelling, CI/CD for pipelines, data quality monitoring, and metric standardization"
   },
   {
-    "objectID": "posts/welcome/index.html",
-    "href": "posts/welcome/index.html",
-    "title": "Welcome To My Blog Template",
-    "section": "",
-    "text": "This is the first post in a Quarto blog. Welcome!"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "This is a blog template for the ETC5523 Communicating with Data assessment at Monash University."
-  },
-  {
     "objectID": "index.html#hi-im-linh",
     "href": "index.html#hi-im-linh",
     "title": "Linh Ngo",
     "section": "",
     "text": "I build data systems and business processes that connect business strategy with execution — from designing analytics pipelines, data models, and dashboards that drive measurable impact, to building and optimizing team operations.\n\n\nMy work sits at the intersection of data analytics, analytics engineering, and business strategy.\nI’ve built and scaled analytics in fintech, SaaS, and consulting — from optimizing data pipelines and implementing self-service analytics at a U.S. tech startup, to leading growth and customer operations at a Vietnamese fintech, and supporting a business transformation for a major bank client.\n\n\n\n\nPursuing a Master of Business Analytics at Monash University to sharpen my analytical skills\nDiving deeper into data engineering and pipeline design - exploring how modern data stacks can bridge the gap between technical systems and business impact\nOptimizing my daily routine for maximum health, mental clarity and emotional regulation\n\n\n\n\n\nLanguages: SQL, Python, R\nTools: dbt, Airbyte, Fivetran, Airflow, Git, Power BI, Tableau, Google Data Studio\nCloud: Snowflake, Azure Data Factory\nSkills: ELT & data modelling, CI/CD for pipelines, data quality monitoring, and metric standardization"
-  },
-  {
-    "objectID": "posts/a2/index.html",
-    "href": "posts/a2/index.html",
-    "title": "Quantifying Healthcare-associated Infection in Germany: Research Reveals Heavy Burden from Preventable Harm",
-    "section": "",
-    "text": "Hospitals are designed to heal, yet many patients leave them sicker than when they arrived — not because of their original illness, but because of healthcare-associated infections (HAIs). These infections arise during hospital care and are a major cause of avoidable deaths, disability, and healthcare costs across Europe. Germany is known for its advanced medical infrastructure and high hygiene standards. Yet, data from Zacher et al. (2019) suggest that its infection burden may be higher than the European average.\nI’m exploring how severe HAIs-related health burden actually is, and what factors might explain the paradox of high infection rates in a strong healthcare system through a deep-dive into the paper “Application of a new methodology and R package reveals a high burden of healthcare-associated infections (HAI) in Germany compared to the average in the European Union/European Economic Area, 2011 to 2012” by Zacher et al. (2019)."
-  },
-  {
-    "objectID": "blog.html",
-    "href": "blog.html",
-    "title": "Blog",
-    "section": "",
-    "text": "No matching items"
-  },
-  {
-    "objectID": "posts/a2/index.html#what-is-healthcare-associated-infection-hai",
-    "href": "posts/a2/index.html#what-is-healthcare-associated-infection-hai",
-    "title": "Quantifying Healthcare-associated Infection in Germany: Research Reveals Heavy Burden from Preventable Harm",
-    "section": "What is healthcare-associated infection (HAI)?",
-    "text": "What is healthcare-associated infection (HAI)?\nHAI is a term used to describe infectious diseases that are associated with hospitalizations. These infections can arise from a variety of sources, including infections from patients, staff, and equipment.\nThis study focuses on five most common HAIs, namely:\n\nHealthcare-associated Clostridioides difficile infection (CDI)\nHealthcare-associated pneumonia (HAP)\nHealthcare-associated primary bloodstream infection (BSI)\nHealthcare-associated urinary tract infection (UTI)\nSurgical site infection (SSI)"
-  },
-  {
-    "objectID": "posts/a2/index.html#how-is-hais-related-health-burden-measured",
-    "href": "posts/a2/index.html#how-is-hais-related-health-burden-measured",
-    "title": "Quantifying Healthcare-associated Infection in Germany: Research Reveals Heavy Burden from Preventable Harm",
-    "section": "How is HAIs-related health burden measured?",
-    "text": "How is HAIs-related health burden measured?\nThe author measures HAIs-related health burden through 3 key metrics:\n\nThe number of HAIs incidence\nThe number of deaths attributed to each HAI\nThe number of disability-adjusted life years (DALYs) due to HAIs: DALYs is a measure of years of lost healthy life, combining years of life lost (YLLs) with years lived with disability (YLDs). This metric enables a common ground to rank and compare the health burden of different HAIs.\n\nData used in this analysis is collected from European Centre for Disease Prevention and Control (ECDC) Point Prevalence Survey (2011–2012).\nAnalysis method is a built-upon from the Burden of Communicable Diseases in Europe (BCoDE) framework, yet enabling a more reliable estimation of HAIs-related health burden in cases of smaller sample size and varying survey protocols. You can find out more about their methodology through the accompanying R packages BHAI."
-  },
-  {
-    "objectID": "posts/a2/index.html#what-does-the-data-reveal",
-    "href": "posts/a2/index.html#what-does-the-data-reveal",
-    "title": "Quantifying Healthcare-associated Infection in Germany: Research Reveals Heavy Burden from Preventable Harm",
-    "section": "What does the data reveal?",
-    "text": "What does the data reveal?\nA substantial and concerning burden of HAIs is found in Germany, especially when benchmarked against other European countries, and other communicable diseases.\n\nOverall HAIs-related health burden\n\n\n\n\n\n\nFigure 1\n\n\n\nThe study estimated 478,222 cases of the five selected HAIs in Germany, leading to 16,245 attributable deaths and 248,920 DALYs (Figure 1).\nTo put these number into perspective, the author benchmarked the burden of HAIs against other common communicable diseases like influenza, Salmonella, hepatitis B, and measles. The comparison is staggering: The burden of all five HAIs combined (308.2 DALYs per 100,000 population) is almost eight times higher than the combined burden of four common communicable diseases .(39.4 DALYs per 100,000 population).\n\n\n\n\n\n\nFigure 2\n\n\n\nFurthermore, the burden of HAIs in Germany is overall higher than the EU/EEA average, with HAIs incidence being 27% higher, attributable death being 29% higher and DALYs being 6% higher (Figure 2).\n\n\nDisproportionate impact of HAIs\nThe sheer volume of HAIs is just one part of the story, but the analysis also revealed a crucial insights into where the true severity lies - fatality rate.\n\n\n\n\n\n\nFigure 3: Contribution to overall burden is not evenly distributed across five HAIs due to differences in fatality rate, with HAP and BSI being much more deadly despite lower case number.\n\n\n\nAs shown in Figure 3 and Figure 2, Healthcare-associated Pneumonia (HAP) and Primary Bloodstream Infection (BSI) were responsible for a whopping 51% of all DALYs, even though they represented only 28% of the total cases. In contrast, UTI registered 45% of all cases, yet only 27% of DALYs. These number show the deadly impact of HAP and BSI, calling for aggressive prevention measures for these diseases.\n\n\nReasons lie in the capacity challenge\nGiven the high hygiene standard imposed across German healthcare system, the existing substantial burden of HAIs is rather surprising. A deeper look into the system suggests the potential root cause being the country’s large hospital capacity and high hospitalization rate. Even with generally good hygiene standards, a higher volume of patients being admitted means more individuals are exposed to the risk of acquiring an HAI. When you increase the population at risk, the overall incidence per general population rises, inflating the total burden metrics."
-  },
-  {
-    "objectID": "posts/a2/index.html#conclusion-what-we-learnt-and-the-way-forward",
-    "href": "posts/a2/index.html#conclusion-what-we-learnt-and-the-way-forward",
-    "title": "Quantifying Healthcare-associated Infection in Germany: Research Reveals Heavy Burden from Preventable Harm",
-    "section": "Conclusion: What we learnt and The way forward",
-    "text": "Conclusion: What we learnt and The way forward\nThe central question - how burdened are Germany’s hospitals by HAIs? - is answered by three key findings:\n\nThe absolute burden of HAIs in Germany is substantial (≈ 250,000 DALYs annually), yet impacts differ across types of HAIs due to varying fatality rate.\nRelative to other diseases, HAIs account for almost eight times more healthy life lost.\nRelative to other European nations, HAIs-related health burder in Germany is modestly but consistently 6% higher.\n\nSuch findings imply the critical role of reducing unnecessary hospitalization and continued adherence to hygiene and infection prevention measures on alleviating HAIs burden in Germany."
   },
   {
     "objectID": "posts/hai-in-germany/index.html",
