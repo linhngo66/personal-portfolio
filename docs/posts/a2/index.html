@@ -6,10 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Emi Tanaka">
-<meta name="dcterms.date" content="2022-07-18">
+<meta name="author" content="Linh Ngo">
+<meta name="dcterms.date" content="2025-10-09">
 
-<title>Welcome To My Blog Template – Linh Ngo</title>
+<title>Quantifying Healthcare-associated Infection in Germany: Research Reveals Heavy Burden from Preventable Harm – Linh Ngo</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -126,11 +126,8 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Welcome To My Blog Template</h1>
-                                <div class="quarto-categories">
-                <div class="quarto-category">news</div>
-              </div>
-                  </div>
+      <h1 class="title">Quantifying Healthcare-associated Infection in Germany: Research Reveals Heavy Burden from Preventable Harm</h1>
+                      </div>
   </div>
     
   
@@ -139,14 +136,14 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Author</div>
       <div class="quarto-title-meta-contents">
-               <p>Emi Tanaka </p>
+               <p>Linh Ngo </p>
             </div>
     </div>
       
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">July 18, 2022</p>
+        <p class="date">October 9, 2025</p>
       </div>
     </div>
     
@@ -165,10 +162,96 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p>This is the first post in a Quarto blog. Welcome!</p>
-<p><img src="thumbnail.jpg" class="img-fluid"></p>
+<p>Hospitals are designed to heal, yet many patients leave them sicker than when they arrived — not because of their original illness, but because of healthcare-associated infections (HAIs). These infections arise during hospital care and are a major cause of avoidable deaths, disability, and healthcare costs across Europe. Germany is known for its advanced medical infrastructure and high hygiene standards. Yet, data from Zacher et al.&nbsp;(2019) suggest that its infection burden may be higher than the European average.</p>
+<p>I’m exploring how severe HAIs-related health burden actually is, and what factors might explain the paradox of high infection rates in a strong healthcare system through a deep-dive into the paper “Application of a new methodology and R package reveals a high burden of healthcare-associated infections (HAI) in Germany compared to the average in the European Union/European Economic Area, 2011 to 2012” by Zacher et al.&nbsp;(2019).</p>
+<section id="what-is-healthcare-associated-infection-hai" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-healthcare-associated-infection-hai">What is healthcare-associated infection (HAI)?</h2>
+<p>HAI is a term used to describe infectious diseases that are associated with hospitalizations. These infections can arise from a variety of sources, including infections from patients, staff, and equipment.</p>
+<p>This study focuses on five most common HAIs, namely:</p>
+<ul>
+<li>Healthcare-associated Clostridioides difficile infection (CDI)</li>
+<li>Healthcare-associated pneumonia (HAP)</li>
+<li>Healthcare-associated primary bloodstream infection (BSI)</li>
+<li>Healthcare-associated urinary tract infection (UTI)</li>
+<li>Surgical site infection (SSI)</li>
+</ul>
+</section>
+<section id="how-is-hais-related-health-burden-measured" class="level2">
+<h2 class="anchored" data-anchor-id="how-is-hais-related-health-burden-measured">How is HAIs-related health burden measured?</h2>
+<p>The author measures HAIs-related health burden through 3 key metrics:</p>
+<ul>
+<li>The number of HAIs incidence</li>
+<li>The number of deaths attributed to each HAI</li>
+<li>The number of disability-adjusted life years (DALYs) due to HAIs: DALYs is a measure of years of lost healthy life, combining years of life lost (YLLs) with years lived with disability (YLDs). This metric enables a common ground to rank and compare the health burden of different HAIs.</li>
+</ul>
+<p>Data used in this analysis is collected from European Centre for Disease Prevention and Control (ECDC) Point Prevalence Survey (2011–2012).</p>
+<p>Analysis method is a built-upon from the Burden of Communicable Diseases in Europe (BCoDE) framework, yet enabling a more reliable estimation of HAIs-related health burden in cases of smaller sample size and varying survey protocols. You can find out more about their methodology through the accompanying R packages <a href="https://cran.r-project.org/web/packages/BHAI/index.html">BHAI</a>.</p>
+</section>
+<section id="what-does-the-data-reveal" class="level2">
+<h2 class="anchored" data-anchor-id="what-does-the-data-reveal">What does the data reveal?</h2>
+<p>A substantial and concerning burden of HAIs is found in Germany, especially when benchmarked against other European countries, and other communicable diseases.</p>
+<section id="overall-hais-related-health-burden" class="level3">
+<h3 class="anchored" data-anchor-id="overall-hais-related-health-burden">Overall HAIs-related health burden</h3>
+<div id="fig-table1" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-table1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/table1.png" id="fig-table1" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-table1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1
+</figcaption>
+</figure>
+</div>
+<p>The study estimated 478,222 cases of the five selected HAIs in Germany, leading to 16,245 attributable deaths and 248,920 DALYs (<a href="#fig-table1" class="quarto-xref">Figure&nbsp;1</a>).</p>
+<p>To put these number into perspective, the author benchmarked the burden of HAIs against other common communicable diseases like influenza, Salmonella, hepatitis B, and measles. The comparison is staggering: The burden of all five HAIs combined (308.2 DALYs per 100,000 population) is almost eight times higher than the combined burden of four common communicable diseases .(39.4 DALYs per 100,000 population).</p>
+<div id="fig-table2" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-table2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/table2.png" id="fig-table2" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-table2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2
+</figcaption>
+</figure>
+</div>
+<p>Furthermore, the burden of HAIs in Germany is overall higher than the EU/EEA average, with HAIs incidence being 27% higher, attributable death being 29% higher and DALYs being 6% higher (<a href="#fig-table2" class="quarto-xref">Figure&nbsp;2</a>).</p>
+</section>
+<section id="disproportionate-impact-of-hais" class="level3">
+<h3 class="anchored" data-anchor-id="disproportionate-impact-of-hais">Disproportionate impact of HAIs</h3>
+<p>The sheer volume of HAIs is just one part of the story, but the analysis also revealed a crucial insights into where the true severity lies - fatality rate.</p>
+<div id="fig-figure2" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-figure2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/figure2.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-figure2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: Contribution to overall burden is not evenly distributed across five HAIs due to differences in fatality rate, with HAP and BSI being much more deadly despite lower case number.
+</figcaption>
+</figure>
+</div>
+<p>As shown in <a href="#fig-figure2" class="quarto-xref">Figure&nbsp;3</a> and <a href="#fig-table2" class="quarto-xref">Figure&nbsp;2</a>, Healthcare-associated Pneumonia (HAP) and Primary Bloodstream Infection (BSI) were responsible for a whopping 51% of all DALYs, even though they represented only 28% of the total cases. In contrast, UTI registered 45% of all cases, yet only 27% of DALYs. These number show the deadly impact of HAP and BSI, calling for aggressive prevention measures for these diseases.</p>
+</section>
+<section id="reasons-lie-in-the-capacity-challenge" class="level3">
+<h3 class="anchored" data-anchor-id="reasons-lie-in-the-capacity-challenge">Reasons lie in the capacity challenge</h3>
+<p>Given the high hygiene standard imposed across German healthcare system, the existing substantial burden of HAIs is rather surprising. A deeper look into the system suggests the potential root cause being the country’s large hospital capacity and high hospitalization rate. Even with generally good hygiene standards, a higher volume of patients being admitted means more individuals are exposed to the risk of acquiring an HAI. When you increase the population at risk, the overall incidence per general population rises, inflating the total burden metrics.</p>
+</section>
+</section>
+<section id="conclusion-what-we-learnt-and-the-way-forward" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion-what-we-learnt-and-the-way-forward">Conclusion: What we learnt and The way forward</h2>
+<p>The central question - <em>how burdened are Germany’s hospitals by HAIs?</em> - is answered by three key findings:</p>
+<ul>
+<li>The absolute burden of HAIs in Germany is substantial (≈ 250,000 DALYs annually), yet impacts differ across types of HAIs due to varying fatality rate.</li>
+<li>Relative to other diseases, HAIs account for almost eight times more healthy life lost.</li>
+<li>Relative to other European nations, HAIs-related health burder in Germany is modestly but consistently 6% higher.</li>
+</ul>
+<p>Such findings imply the critical role of reducing unnecessary hospitalization and continued adherence to hygiene and infection prevention measures on alleviating HAIs burden in Germany.</p>
+</section>
+<section id="references" class="level1">
+<h1>References</h1>
+<p>Zacher, B., Haller, S., Willrich, N., Walter, J., Abu Sin, M., Cassini, A., Plachouras, D., Suetens, C., Behnke, M., Gastmeier, P., Wieler, L. H., &amp; Eckmanns, T. (2019). Application of a new methodology and R package reveals a high burden of healthcare-associated infections (HAI) in Germany compared to the average in the European Union/European Economic Area, 2011 to 2012. Eurosurveillance, 24(46). https://doi.org/10.2807/1560-7917.es.2019.24.46.1900135</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
