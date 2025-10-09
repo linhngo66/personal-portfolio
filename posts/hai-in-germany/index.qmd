@@ -5,6 +5,8 @@ author: "Linh Ngo"
 category: "data report"
 image: "images/thumbnail.jpg"
 toc: true
+tbl-cap-location: bottom
+fig-cap-location: bottom
 ---
 
 Hospitals are designed to heal, yet many patients leave them sicker than when they arrived — not because of their original illness, but because of healthcare-associated infections (HAIs). These infections arise during hospital care and are a major cause of avoidable deaths, disability, and healthcare costs across Europe. Germany is known for its advanced medical infrastructure and high hygiene standards. Yet, data from Zacher et al. (2019) suggest that its infection burden may be higher than the European average. 
@@ -41,15 +43,15 @@ A substantial and concerning burden of HAIs is found in Germany, especially when
 
 ### Overall HAIs-related health burden
 
-![Annual burden of five types of HAIs in Germany](images/table1.png){#tbl-table1}
+![Annual burden of five types of HAIs in Germany](images/table1.png){#fig-table1}
 
-The study estimated 478,222 cases of the five selected HAIs in Germany, leading to 16,245 attributable deaths and 248,920 DALYs (@tbl-table1).
+The study estimated 478,222 cases of the five selected HAIs in Germany, leading to 16,245 attributable deaths and 248,920 DALYs (@fig-table1).
 
 To put these number into perspective, the author benchmarked the burden of HAIs against other common communicable diseases like influenza, Salmonella, hepatitis B, and measles. The comparison is staggering: The burden of all five HAIs combined (308.2 DALYs per 100,000 population) is almost eight times higher than the combined burden of four common communicable diseases (39.4 DALYs per 100,000 population).
 
-![Comparison the EU/EEA average further emphasizes a heavier national burden despite strong hygiene standards.](images/table2.png){#tbl-table2}
+![Comparison the EU/EEA average further emphasizes a heavier national burden despite strong hygiene standards.](images/table2.png){#fig-table2}
 
-Furthermore, the burden of HAIs in Germany is overall higher than the EU/EEA average, with HAIs incidence being 27% higher, attributable death being 29% higher and DALYs being 6% higher (@tbl-table2).
+Furthermore, the burden of HAIs in Germany is overall higher than the EU/EEA average, with HAIs incidence being 27% higher, attributable death being 29% higher and DALYs being 6% higher (@fig-table2).
 
 ### Disproportionate impact of HAIs
 
@@ -57,7 +59,7 @@ The sheer volume of HAIs is just one part of the story, but the analysis also re
 
 ![Contribution to overall burden is not evenly distributed across five HAIs due to differences in fatality rate, with HAP and BSI being much more deadly despite lower case number.](images/figure2.png){#fig-figure2}
 
-As shown in @fig-figure2 and @tbl-table2, Healthcare-associated Pneumonia (HAP) and Primary Bloodstream Infection (BSI) were responsible for a whopping 51% of all DALYs, even though they represented only 28% of the total cases. In contrast, UTI registered 45% of all cases, yet only 27% of DALYs. These number show the deadly impact of HAP and BSI, calling for aggressive prevention measures for these diseases.
+As shown in @fig-figure2 and @fig-table2, Healthcare-associated Pneumonia (HAP) and Primary Bloodstream Infection (BSI) were responsible for a whopping 51% of all DALYs, even though they represented only 28% of the total cases. In contrast, UTI registered 45% of all cases, yet only 27% of DALYs. These number show the deadly impact of HAP and BSI, calling for aggressive prevention measures for these diseases.
 
 ### Reasons lie in the capacity challenge
 
