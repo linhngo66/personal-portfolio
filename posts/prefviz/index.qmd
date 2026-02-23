@@ -1,0 +1,18 @@
+---
+title: "Putting ternary plots on higher-dimensional spaces"
+description: "I developed a new R software package that make drawing ternary plots on higher-dimensional spaces, with interactivity easier"
+category: case studies
+image: "abcnews_2025.png"
+toc: true
+---
+
+I recently explored the world of computational statistics, or put it simply, building softwares that implement statistical theories. For me, it was **building new visualization methods and softwares** that can help me better understand the data I'm working with.
+
+[`prefviz`](https://numbats.github.io/prefviz/) is a new R package for interactive and high-dimensional ternary plot that I developed, along with my supervisors Di and Damjan. Hopefully I can publish it on CRAN (aka production version of R packages) by end of March 2026!
+
+![I think this gif makes you a bit more curious about what ternary plot is (hopefully)](animation.gif)
+
+Find out more about the package and its features via:
+
+- [`prefviz` website](https://numbats.github.io/prefviz/)
+- [`prefviz` presentation](https://linhngo66.github.io/prefviz-presentation/#/title-slide)

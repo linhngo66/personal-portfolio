@@ -1,0 +1,75 @@
+---
+title: "End-to-end implementation of Mixpanel for self-service product analytics"
+category: case studies
+image: "images/thumbnail.png"
+toc: true
+tbl-cap-location: bottom
+fig-cap-location: bottom
+---
+
+This is how I helped Otrafy's CEO, who is my career role model to this day, provide complete visibility into user behavior and retention, and empower non-technical users to self-serve their analytics needs with a product analytics tool - Mixpanel. 
+
+Otrafy is a B2B SaaS company that provides a document management platform for food manufacturers to collaborate with their suppliers, ensure their food safety and compliance with FDA regulations. The company was undergoing a major strategic shift from door-to-door sales and onboarding to a freemium, self-service model. Leadership anticipated a surge in user sign-ups and activation volumns, and would like to understand more about the user journey upon sign-up, and identify any bottlenecks in the onboarding process. In order to do so, the company needs to **implement a product analytics tool** that can track user behavior and provide insights into user engagement and retention.
+
+# The challenge
+
+Existing **in-house product tracking tool did not track all of the necessary user events** and properties to provide a comprehensive view of the user journey. Additionally, the tool was **not designed for scalability and analytics efficiency**. 
+
+As a result, leadership **lacked visibility into user behavior and feature performance**. **Data team was slow to deliver insights**, and product team had to rely on anecdotal evidence from existing users and guesswork to make product decisions. This hindered the company's ability to optimize the onboarding process and improve user retention.
+
+There is a critical need for a comprehensive and scalable product analytics solution that track user behavior across the entire user journey, from sign-up to activation and beyond. Accompanied analytics functionality would be a big plus for a one-stop solution for all product analytics needs.
+
+# The solution
+
+> Introduce Mixpanel as the product analytics tool for real-time user behavior tracking and self-service product analytics.
+
+![](images/solution.png)
+
+## Provider selections
+
+The market for product analytics tools is crowded, with a wide range of options available. Along with Mixpanel, I evaluated severals, including Amplitude, Heap, Segment, Google Analytics, etc.
+
+Below are the criteria I used to evaluate and compare different providers:
+
+- Pricing - Does the pricing fit the company's annual budget and anticipated growth?
+- Ease of implementation - How much time and how many engineers would be required to implement the solution?
+- Availability of SDKs, community support and customer services - How easy is it to get help?
+- Integration with existing stack - Is reverse ETL possible to sync data back to the data warehouse? Can it integrate with other tools in the stack, such as CRM, marketing automation, etc.?
+- Analytics functionality - What are the ranges of metrics and visualizations that the tool can provide?
+- Learning curve for non-technical users - How easy is it to get started with the tool?
+
+In the end, Mixpanel won for its ease of implementation, availability of supports and documentation, and comprehensive analytics functionality. The pricing was also reasonable for the company's needs and budget.
+
+## Requirement mapping
+
+Products and Customer Success team were the main users for the solution. Upon discussion, the team and I agreed to cover the entire platform feature set, and all buttons and options in the UI in a phased approach. 
+
+The first phase would cover the early stages of user journey (sign-up, onboarding, activation, etc.) and core features (create documents, send requests, etc.). The second phase would cover additional features such as customer support, feedback, and analytics.
+
+The solution is expected to cover the entire user journey, from sign-up, onboarding to activation and beyond. 
+
+## Co-development with Engineering team
+
+In collaboration with the Engineering team, I worked on the following three areas:
+
+1. Supervise the implementation of tracking user events and properties using Mixpanel's APIs, and provide requirement clarification when needed.
+2. Designed pipeline to reverse ETL data to Mixpanel, and integrate data from Mixpanel with other tools like CRM, marketing automation, etc. 
+3. Develop a one-stop product analytics dashboard in Mixpanel for key metrics
+
+![Source: Mixpanel's Documentation](images/mixpanel-pipeline.png)
+
+## User education
+
+I held a number of training sessions with the Product, Customer Success and Leadership team to onboard them to the new tools. The training sessions were hands-on, and accompanied by mini-homeworks and documentations to ensure understanding. 
+
+# The results
+
+The project concluded successfully within 2.5 months, right in time for the company's launch of the new business model. 
+
+Leadership was able to see user behavior and retention metrics in real-time, and Product team gained visibility into value-driving features and user engagement. 
+
+Number of data requests to the data team dropped almost by 40%, while the number of self-service ad-hoc reports made by non-technical users doubled. Mixpanel's adoption maintained consistent 80% across all teams.
+
+# Personal note
+
+This is the first major project of my career. I was a fresh graduate with only 6 months of experience at the time. Being given the opportunity to lead such a critical project like side, and working along side engineers of decades of experiences as their project owner was a huge learning experience for me. It was painfully challenging and causing a lot of stress at times, mainly because of the pressure I put on myself to succeed and deliver impact. But in hindsight, I am forever grateful for the step-up opportunity I don't think a usual fresh grad would get exposed to. It really pushed me to grow as a project manager and a problem solver. 
