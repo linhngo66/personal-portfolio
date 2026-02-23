@@ -2,7 +2,8 @@
   {
     "listing": "/blog.html",
     "items": [
-      "/posts/hai-in-germany/index.html"
+      "/posts/mixpanel-implementation/index.html",
+      "/posts/prefviz/index.html"
     ]
   }
 ]

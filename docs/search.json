@@ -4,21 +4,21 @@
     "href": "blog.html",
     "title": "Blog",
     "section": "",
-    "text": "Quantifying Healthcare-associated Infection in Germany: Research Reveals Heavy Burden from Preventable Harm\n\n\n\n\n\n\n\n\n\n\n\nOct 9, 2025\n\n\nLinh Ngo\n\n\n\n\n\n\nNo matching items"
+    "text": "Auditing elderly accessibility of MTR stations in Hong Kong\n\n\n\n\n\nWhich MTR stations needs improvement to better accomodate the ageing population in Hong Kong? I developed an assessment framework to evaluate how well MTR stations serve elderly population.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEnd-to-end implementation of Mixpanel for self-service product analytics\n\n\n\n\n\n\n\n\n\n\n\ncase studies\n\n\n\n\n\n\n\n\n\n\n\n\nPutting ternary plots on higher-dimensional spaces\n\n\n\n\n\nI developed a new R software package that make drawing ternary plots on higher-dimensional spaces, with interactivity easier\n\n\n\n\n\ncase studies\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Linh Ngo",
     "section": "",
-    "text": "I build data systems and business processes that connect business strategy with execution — from designing analytics pipelines, data models, and dashboards that drive measurable impact, to building and optimizing team operations.\n\n\nMy work sits at the intersection of data analytics, analytics engineering, and business strategy.\nI’ve built and scaled analytics in fintech, SaaS, and consulting — from optimizing data pipelines and implementing self-service analytics at a U.S. tech startup, to leading growth and customer operations at a Vietnamese fintech, and supporting a business transformation for a major bank client.\n\n\n\n\nPursuing a Master of Business Analytics at Monash University to sharpen my analytical skills\nDiving deeper into data engineering and pipeline design - exploring how modern data stacks can bridge the gap between technical systems and business impact\nOptimizing my daily routine for maximum health, mental clarity and emotional regulation\n\n\n\n\n\nLanguages: SQL, Python, R\nTools: dbt, Airbyte, Fivetran, Airflow, Git, Power BI, Tableau, Google Data Studio\nCloud: Snowflake, Azure Data Factory\nSkills: ELT & data modelling, CI/CD for pipelines, data quality monitoring, and metric standardization"
+    "text": "I build data systems and business processes that connect business strategy with execution — from designing analytics pipelines, data models, and dashboards that drive measurable impact, to building and optimizing team operations.\n\n\nProfessionally, my work sits at the intersection of data analytics, analytics engineering, and business strategy.\nI’ve built and scaled analytics in fintech, SaaS, and consulting - from optimizing data pipelines and implementing self-service analytics at a U.S. tech startup, to leading growth and customer operations at a Vietnamese fintech, and supporting a business transformation for a major bank client.\nPersonally, I’m a long-distance runner, a frequent cafe-goer, a solo traveler, and a journaler. Fun fact: I have solo-travelled around SEA, I finish 13 journals every year on average.\nFind out more about my work through my blogs and github repo.\n\n\n\n\nRelearning and diving deeper into data engineering and pipeline design - exploring how modern data stacks can bridge the gap between technical systems and business impact\nDeveloping new visualization methods to support high-dimensional compositional data through my new R package prefviz\nPursuing my project R1000, where I try to get rejected 1000 times in 2026 to get more comfortable with rejections and more importantly, take myself closer to my career and life goals. (Last updated: 53 rejections by 2026-02-21)\n\n\n\n\n\nLanguages: SQL, Python, R\nTools: dbt, Airbyte, Fivetran, Airflow, Git, Power BI, Tableau, Google Data Studio\nCloud: Snowflake, Azure Data Factory\nSkills: ELT & data modelling, CI/CD for pipelines, data quality monitoring, and metric standardization"
   },
   {
     "objectID": "index.html#hi-im-linh",
     "href": "index.html#hi-im-linh",
     "title": "Linh Ngo",
     "section": "",
-    "text": "I build data systems and business processes that connect business strategy with execution — from designing analytics pipelines, data models, and dashboards that drive measurable impact, to building and optimizing team operations.\n\n\nMy work sits at the intersection of data analytics, analytics engineering, and business strategy.\nI’ve built and scaled analytics in fintech, SaaS, and consulting — from optimizing data pipelines and implementing self-service analytics at a U.S. tech startup, to leading growth and customer operations at a Vietnamese fintech, and supporting a business transformation for a major bank client.\n\n\n\n\nPursuing a Master of Business Analytics at Monash University to sharpen my analytical skills\nDiving deeper into data engineering and pipeline design - exploring how modern data stacks can bridge the gap between technical systems and business impact\nOptimizing my daily routine for maximum health, mental clarity and emotional regulation\n\n\n\n\n\nLanguages: SQL, Python, R\nTools: dbt, Airbyte, Fivetran, Airflow, Git, Power BI, Tableau, Google Data Studio\nCloud: Snowflake, Azure Data Factory\nSkills: ELT & data modelling, CI/CD for pipelines, data quality monitoring, and metric standardization"
+    "text": "I build data systems and business processes that connect business strategy with execution — from designing analytics pipelines, data models, and dashboards that drive measurable impact, to building and optimizing team operations.\n\n\nProfessionally, my work sits at the intersection of data analytics, analytics engineering, and business strategy.\nI’ve built and scaled analytics in fintech, SaaS, and consulting - from optimizing data pipelines and implementing self-service analytics at a U.S. tech startup, to leading growth and customer operations at a Vietnamese fintech, and supporting a business transformation for a major bank client.\nPersonally, I’m a long-distance runner, a frequent cafe-goer, a solo traveler, and a journaler. Fun fact: I have solo-travelled around SEA, I finish 13 journals every year on average.\nFind out more about my work through my blogs and github repo.\n\n\n\n\nRelearning and diving deeper into data engineering and pipeline design - exploring how modern data stacks can bridge the gap between technical systems and business impact\nDeveloping new visualization methods to support high-dimensional compositional data through my new R package prefviz\nPursuing my project R1000, where I try to get rejected 1000 times in 2026 to get more comfortable with rejections and more importantly, take myself closer to my career and life goals. (Last updated: 53 rejections by 2026-02-21)\n\n\n\n\n\nLanguages: SQL, Python, R\nTools: dbt, Airbyte, Fivetran, Airflow, Git, Power BI, Tableau, Google Data Studio\nCloud: Snowflake, Azure Data Factory\nSkills: ELT & data modelling, CI/CD for pipelines, data quality monitoring, and metric standardization"
   },
   {
     "objectID": "posts/hai-in-germany/index.html",
@@ -54,5 +54,47 @@
     "title": "Quantifying Healthcare-associated Infection in Germany: Research Reveals Heavy Burden from Preventable Harm",
     "section": "Conclusion: What we learnt and The way forward",
     "text": "Conclusion: What we learnt and The way forward\nThe central question - how severe is HAIs-related health burden actually in Germany? - is answered by three key findings:\n\nThe absolute burden of HAIs in Germany is substantial (≈ 250,000 DALYs annually), yet impacts differ across types of HAIs due to varying fatality rate.\nRelative to other diseases, HAIs account for almost eight times more healthy life lost.\nRelative to other European nations, HAIs-related health burder in Germany is modestly but consistently 6% higher.\nOne potential driven for such heavy burden is from high volume of hospital admission, inflating the number of incidents and total burden metrics.\n\nSuch findings imply the critical role of reducing unnecessary hospitalization and continued adherence to hygiene and infection prevention measures on alleviating HAIs burden in Germany."
+  },
+  {
+    "objectID": "posts/mixpanel-implementation/index.html",
+    "href": "posts/mixpanel-implementation/index.html",
+    "title": "End-to-end implementation of Mixpanel for self-service product analytics",
+    "section": "",
+    "text": "This is how I helped Otrafy’s CEO, who is my career role model to this day, provide complete visibility into user behavior and retention, and empower non-technical users to self-serve their analytics needs with a product analytics tool - Mixpanel.\nOtrafy is a B2B SaaS company that provides a document management platform for food manufacturers to collaborate with their suppliers, ensure their food safety and compliance with FDA regulations. The company was undergoing a major strategic shift from door-to-door sales and onboarding to a freemium, self-service model. Leadership anticipated a surge in user sign-ups and activation volumns, and would like to understand more about the user journey upon sign-up, and identify any bottlenecks in the onboarding process. In order to do so, the company needs to implement a product analytics tool that can track user behavior and provide insights into user engagement and retention."
+  },
+  {
+    "objectID": "posts/mixpanel-implementation/index.html#provider-selections",
+    "href": "posts/mixpanel-implementation/index.html#provider-selections",
+    "title": "End-to-end implementation of Mixpanel for self-service product analytics",
+    "section": "Provider selections",
+    "text": "Provider selections\nThe market for product analytics tools is crowded, with a wide range of options available. Along with Mixpanel, I evaluated severals, including Amplitude, Heap, Segment, Google Analytics, etc.\nBelow are the criteria I used to evaluate and compare different providers:\n\nPricing - Does the pricing fit the company’s annual budget and anticipated growth?\nEase of implementation - How much time and how many engineers would be required to implement the solution?\nAvailability of SDKs, community support and customer services - How easy is it to get help?\nIntegration with existing stack - Is reverse ETL possible to sync data back to the data warehouse? Can it integrate with other tools in the stack, such as CRM, marketing automation, etc.?\nAnalytics functionality - What are the ranges of metrics and visualizations that the tool can provide?\nLearning curve for non-technical users - How easy is it to get started with the tool?\n\nIn the end, Mixpanel won for its ease of implementation, availability of supports and documentation, and comprehensive analytics functionality. The pricing was also reasonable for the company’s needs and budget."
+  },
+  {
+    "objectID": "posts/mixpanel-implementation/index.html#requirement-mapping",
+    "href": "posts/mixpanel-implementation/index.html#requirement-mapping",
+    "title": "End-to-end implementation of Mixpanel for self-service product analytics",
+    "section": "Requirement mapping",
+    "text": "Requirement mapping\nProducts and Customer Success team were the main users for the solution. Upon discussion, the team and I agreed to cover the entire platform feature set, and all buttons and options in the UI in a phased approach.\nThe first phase would cover the early stages of user journey (sign-up, onboarding, activation, etc.) and core features (create documents, send requests, etc.). The second phase would cover additional features such as customer support, feedback, and analytics.\nThe solution is expected to cover the entire user journey, from sign-up, onboarding to activation and beyond."
+  },
+  {
+    "objectID": "posts/mixpanel-implementation/index.html#co-development-with-engineering-team",
+    "href": "posts/mixpanel-implementation/index.html#co-development-with-engineering-team",
+    "title": "End-to-end implementation of Mixpanel for self-service product analytics",
+    "section": "Co-development with Engineering team",
+    "text": "Co-development with Engineering team\nIn collaboration with the Engineering team, I worked on the following three areas:\n\nSupervise the implementation of tracking user events and properties using Mixpanel’s APIs, and provide requirement clarification when needed.\nDesigned pipeline to reverse ETL data to Mixpanel, and integrate data from Mixpanel with other tools like CRM, marketing automation, etc.\nDevelop a one-stop product analytics dashboard in Mixpanel for key metrics\n\n\n\n\nSource: Mixpanel’s Documentation"
+  },
+  {
+    "objectID": "posts/mixpanel-implementation/index.html#user-education",
+    "href": "posts/mixpanel-implementation/index.html#user-education",
+    "title": "End-to-end implementation of Mixpanel for self-service product analytics",
+    "section": "User education",
+    "text": "User education\nI held a number of training sessions with the Product, Customer Success and Leadership team to onboard them to the new tools. The training sessions were hands-on, and accompanied by mini-homeworks and documentations to ensure understanding."
+  },
+  {
+    "objectID": "posts/prefviz/index.html",
+    "href": "posts/prefviz/index.html",
+    "title": "Putting ternary plots on higher-dimensional spaces",
+    "section": "",
+    "text": "I recently explored the world of computational statistics, or put it simply,building softwares that implement statistical theories. For me, it was building new visualization methods that can help me better understand the data I’m working with.\nprefviz is a new R package for interactive and high-dimensional ternary plot that I developed, along with my supervisors Di and Damjan. Hopefully I can publish it on CRAN (aka production version of R packages) by end of March 2026!\nFind out more about the package and its features via:\n\nprefviz website\nprefviz presentation"
   }
 ]

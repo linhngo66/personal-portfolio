@@ -23,15 +23,19 @@ I build **data systems and business processes that connect business strategy wit
 
 ### What I've done
 
-My work sits at the intersection of **data analytics, analytics engineering, and business strategy**.  
+Professionally, my work sits at the intersection of **data analytics, analytics engineering, and business strategy**. 
 
-I’ve built and scaled analytics in **fintech, SaaS, and consulting** — from optimizing data pipelines and implementing self-service analytics at a U.S. tech startup, to leading growth and customer operations at a Vietnamese fintech, and supporting a business transformation for a major bank client.
+I’ve built and scaled analytics in **fintech, SaaS, and consulting** - from optimizing data pipelines and implementing self-service analytics at a U.S. tech startup, to leading growth and customer operations at a Vietnamese fintech, and supporting a business transformation for a major bank client.
 
-### What I’m focused on now
+Personally, I'm a long-distance runner, a frequent cafe-goer, a solo traveler, and a journaler. Fun fact: I have solo-travelled around SEA, I finish 13 journals every year on average. 
 
-- Pursuing a **Master of Business Analytics at Monash University** to sharpen my analytical skills
-- Diving deeper into **data engineering and pipeline design** - exploring how modern data stacks can bridge the gap between technical systems and business impact
-- Optimizing my daily routine for maximum health, mental clarity and emotional regulation
+Find out more about my work through my blogs and github repo. 
+
+### What I've been into lately
+
+- Relearning and diving deeper into **data engineering and pipeline design** - exploring how modern data stacks can bridge the gap between technical systems and business impact
+- Developing **new visualization methods** to support high-dimensional compositional data through my new R package [`prefviz`](https://numbats.github.io/prefviz/)
+- Pursuing my project R1000, where I try to **get rejected 1000 times in 2026** to get more comfortable with rejections and more importantly, take myself closer to my career and life goals. (Last updated: 53 rejections by 2026-02-21)
 
 ### Tech Stack  
 
@@ -39,6 +43,3 @@ I’ve built and scaled analytics in **fintech, SaaS, and consulting** — from 
 - **Tools:** dbt, Airbyte, Fivetran, Airflow, Git, Power BI, Tableau, Google Data Studio
 - **Cloud:** Snowflake, Azure Data Factory
 - **Skills:** ELT & data modelling, CI/CD for pipelines, data quality monitoring, and metric standardization  
-
-
-
