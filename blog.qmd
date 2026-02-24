@@ -7,6 +7,8 @@ listing:
       title: "Auditing elderly accessibility of MTR stations in Hong Kong"
       description: "Which MTR stations needs improvement to better accomodate the ageing population in Hong Kong? I developed an assessment framework to evaluate how well MTR stations serve elderly population."
       image: "mtr_station_profile.png"
+      categories: analysis
   type: default
-  fields: [image, title, description, category]
+  categories: numbered
+  fields: [image, title, description, categories, author]
 ---

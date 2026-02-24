@@ -1,0 +1,424 @@
+---
+title: "Are you paying higher rent for better security in Melbourne?"
+description: I developed a Price-to-Safety index to compare the safety and affordability of suburbs in Melbourne when it comes to rental.
+toc: true
+categories: analysis
+image: melb_sa2_abs.png
+bibliography: citations/citations.bib
+csl: citations/apa.csl
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE,
+                      warning = FALSE, 
+                      message = FALSE) 
+```
+
+```{r}
+#| echo: false
+library(sf)
+library(tidyverse)
+library(ggplot2)
+# library(ggExtra)
+library(sugarbag)
+library(DT)
+library(ggiraph)
+library(kableExtra)
+```
+
+**Personal notes:** If you're like me and have a pattern of uprooting your life every 2-3 years to move to a new city (or even continent!), you will 100% relate to the pain of finding a decent rental place to call home. As a young female who mostly moves solo, there is always this burning question of "Which part of the city should I stay given my limited budget and the seemingly skyrocketing chaos and crime rate across the globe?". That is the motivation behind this project, and this is what I was desperately looking for from at least one real estate listing page.
+
+Source code is available [here](https://github.com/linhngo66/price_to_safety_index_melb)
+
+# Business context
+
+Crime rate has been soaring, and several news coverage about stabbings of innocent people in Melbourne have raised public concern. As a result, people has been cautious of where to commute and to reside. 
+
+The rentals marketplace team is exploring whether to introduce a **Price‑to‑Safety index** on Melbourne property listings to help renters and investors understand the trade‑off between rent levels and crime rate in Melbourne. The product team wants to know if suburb‑level data on rent and crime actually yields **useful, defensible insights** such as regional differences, “underrated” safe‑and‑affordable areas, or “overpriced” suburbs that are no safer than cheaper alternatives.
+
+**The key analytics questions are:**
+
+- Can we reliably compute suburb‑level measures of **rent** and **crime risk** for metropolitan Melbourne that are stable enough to show to end‑users?
+- Is there any **systematic pattern** between rent and crime by region (e.g., West vs East, CBD vs outer suburbs) that would support a Price‑to‑Safety metric?
+- Can we identify **“value” suburbs** (relatively safe for the price) and **“overpriced” suburbs** (high price but no better safety) in a way that is simple and explainable for use on listing pages and in suburb‑guide content?
+
+The outcome of this project is a recommendation on whether to proceed with a Price‑to‑Safety index, and if so, which metrics and UX patterns (per‑listing badges, suburb rankings, SEO articles) are supported by the data.
+
+# Executive summary
+
+This project analyzes Melbourne suburbs using a Price-to-Safety index that blends median weekly rent (60% weight) and crime incident rates (40% weight), categorizing them into four quadrants (Underrated, Overpriced, Premium Safe, Cheap Risk). The analysis found that:
+
+- **Clear regional patterns emerge:** Inner Metro (CBD) ranks worst—highest rents and crime incidents—while Eastern and Inner South East regions offer superior safety at more reasonable prices.
+- **Value suburbs cluster in Eastern/Northern areas:** These dominate "Underrated" (low rent + low crime), while Inner Metro/Western have higher "Overpriced" proportions (high rent + high crime).
+- **Facility/data reliability holds:** Metrics stable for 75%+ of suburbs (pop ≥1,000) using 2024-adjusted Census + Crime Statistics Agency data.
+
+This analysis can be the foundation of several value-driven applications:
+
+- Listing badges showing suburb Price-to-Safety vs peers
+- SEO & GEO articles highlighting Eastern "hidden gems" vs CBD risks
+- Interactive data app for suburb comparison with adjustable rent/safety weights
+
+# Methodology
+
+## Data collection
+
+```{r}
+#| label: tbl-data-collection
+#| tbl-cap: Data sources and respective objectives
+
+basic_metadata <- tribble(
+  ~Data, ~Source, ~Objective,
+  "2021 Census GeoPackages - G01", "ABS", "To collect Population of all suburbs in Melbourne. This is used to calculate incident rate per 100 residents",
+  
+  "2021 Census GeoPackages - G02", "ABS", "To collect Median weekly rent and Geospatial boundaries of all suburbs in Melbourne",
+  
+  "Recorded Criminal Incidents", "CSA", "To collect all criminal incidents recorded in Victoria. This is used to calculate incident rate per 100 residents",
+  
+  "Consumer Price Index", "ABS", "To adjust 2021 Census Rent data by adding the percentage growth in CPI of rent in Melbourne between 2021 and 2024",
+  
+  "Estimated Resident Population", "ABS", "To adjust 2021 Census Population data to 2024",
+
+  "Metropolitan Melbourne regions and their local government areas", "The State of Victoria Department of Environment, Land, Water and Planning (DELWP)", "To visualize and compare data by regions"
+)
+
+kable(basic_metadata, align = "l")
+```
+
+@tbl-data-collection summarizes data I collected for this analysis. There are three key data points I need for this analysis, namely rent price by suburb, crime rate by surburb and geospatial boundary of each suburb.
+
+I collected rent price data from 2021 Census GeoPackages - Table G02, where Median weekly rent is provided [@census]. While there are more recent sources of rental prices available, they are either less comprehensive, often missing data on outer areas, or locked behind paywall. 2021 Census is the most complete data source on rental price with true open access. However, since my analysis is anchored in 2024, yet the data is from 2021, I need to adjust rent data using the 2021 and 2024 consumer-price index (CPI) provided by Australia Bureau of Statitistics [@abs_cpi].
+
+To calculate the crime rate, defined as incident rate per 100 residents, I needed data on crimes and population in Melbourne. I collected data on all criminal incidents in 2024 from Victoria's Crime Statistics Agency (CSA). CSA collects recorded crime from Victoria Police to process and release to the public every quarter, thus, is the most up-to-date and official data source on Victoria crimes. Regarding population data, I collected it from 2021 Census GeoPackages - Table G01 [@census]. Similar to rental data, this data is from 2021, thus, needed adjusting by annual population growth rate, which is calculated from Estimated Resident Population (ERP) provided by ABS [@erp].
+
+The 2021 Census GeoPackages also offer geospatial data on suburb level, called Suburbs and Localities (SALs). I use this data to visualize two key variables on a map.
+
+All data from ABS are licensed under Creative Commons Attribution 4.0 International licence, and data from CSA are licensed under Creative Commons Attribution 3.0 Australia license [@csa_copyright; @abs_privacy]
+
+## Calculation and assumptions
+
+### Price-to-Safety index
+
+Price-to-Safety index is calculated as a weighted average of suburb-level weekly rent (60%) and incident rate (40%). This percentage indicates the relative importance of each factor to the overall index.
+
+$$
+\text{Price-to-Safety index} = 0.6 \times \text{Median weekly rent} + 0.4 \times \text{Incident rate}
+$$
+
+#### Estimate Median weekly rent for 2024
+
+Median weekly rent in 2024 is calculated by multiple 2021 Census median weekly rent by Rent growth rate, which is defined as percentage change in CPI between 2021 and 2024.
+
+$$
+\text{Median weekly rent in 2024} = \text{Median weekly rent in 2021} \times (1 + \text{CPI in 2021}/\text{CPI in 2024})
+$$
+
+*Assumptions:* CPI is an estimate on State level, including both metropolitan and regional areas. I assume this is a good reflection of how rental price changes within Melbourne metropolitan areas. 
+
+#### Calculate Incident rate per 100 residents
+
+$$
+\text{Incident rate per 100 residents} = \frac{\text{incident counts}}{\text{population in 2024}} \times 100
+$$
+
+#### Estimate Population for 2024
+
+Population in 2024 is calculated by multiplying 2021 Census population by Population growth rate between 2021 and 2024. 
+
+$$
+\text{Population in 2024} = \text{Population in 2021} \times (1 + \text{ERP in 2024}/\text{ERP in 2021})
+$$
+
+*Assumptions:* While 2024 estimated population exists, they are not presented by suburb. Therefore, I need to calculate the population growth rate between 2021 and 2024 by assuming the reliability of this population estimate. 
+
+#### Harmonising suburbs and local government areas between Census data and CSA data 
+
+*Assumption:* There exists multiple suburbs that extend to more than one local government area (LGA) and metropolitan region, creating duplications when merging CSA data with Census data. This is because CSA data is presented by suburbs and LGAs, while Census data is presented by suburbs only. While this does not impact any calculation, it creates duplication during visualization.
+
+Therefore, where duplications among extended suburbs happen, I keep the first entry and assume that the suburb only belongs to one LGAs or metropolitan region.
+
+### Suburb category based on Weekly rent and Incident rate
+
+Looking into the relative impact of rent and incident rate, I decided to categorize suburbs into 4 quadrants:
+
+- Underrated: Rent is lower than the median rent of alls suburbs, and incident rate is lower than the median incident rate of all suburbs.
+- Overpriced: Rent is higher than the median rent of all suburbs, and incident rate is higher than the median incident rate of all suburbs.
+- Premium Safe: Rent is higher than the median rent of all suburbs, and incident rate is lower than the median incident rate of all suburbs.
+- Cheap Risk: Rent is lower than the median rent of all suburbs, and incident rate is higher than the median incident rate of all suburbs.
+
+![](suburb_category.jpg){fig-align="center"}
+
+```{r}
+region_boundary <- read_sf(here::here("posts/price_to_safety_index_melb/data/region-boundary.gpkg"))
+census_csa_metro <- read_sf(here::here("posts/price_to_safety_index_melb/data/census-csa-metro.gpkg"))
+
+index <- census_csa_metro |> 
+  filter(median_rent_weekly > 0) |>
+  mutate(
+    safety = (1 - percent_rank(incident_rate)) * 100,
+    affordability = percent_rank(median_rent_weekly)*100,
+    index = safety*0.6 + affordability*0.4,
+    log10_incident_rate = log10(incident_rate),
+    log10_median_rent_weekly = log10(median_rent_weekly),
+    group = case_when(
+      median_rent_weekly <= median(median_rent_weekly) & incident_rate <= median(incident_rate) ~ "Underrated",
+      median_rent_weekly >= median(median_rent_weekly) & incident_rate >= median(incident_rate) ~ "Overpriced",
+      median_rent_weekly <= median(median_rent_weekly) & incident_rate >= median(incident_rate) ~ "Cheap Risk",
+      median_rent_weekly >= median(median_rent_weekly) & incident_rate <= median(incident_rate) ~ "Premium Safe"),
+    text = paste0(
+      suburb_full_name, " \n",
+      "Population: ", tot_p_p, " \n",
+      "Incident Rate: ", round(incident_rate, 2), " \n",
+      "Median Weekly Rent: ", median_rent_weekly, " \n",
+      "Index: ", round(index, 2), " \n",
+      "Category: ", group
+    )
+  ) |> 
+  mutate(
+    power10_incident_rate = 10^log10_incident_rate,
+    power10_median_rent_weekly = 10^log10_median_rent_weekly
+  )
+```
+
+# Key findings
+
+## Systematic differences in rent and crime risk exists across regions: Melbourne CBD (Inner Metro Region) ranks lowest in both affordability and safety, while the East trumps.
+
+```{r stat-summary}
+summary_stats <- index |>
+  st_drop_geometry() |>
+  group_by(region) |>
+  summarise(
+    Suburbs = n(),
+    Population = sum(tot_p_p, na.rm = TRUE),
+    `Median index` = median(index, na.rm = TRUE),
+    `Median rent (/wk)` = median(median_rent_weekly, na.rm = TRUE),
+    `Median incident rate` = median(incident_rate, na.rm = TRUE),
+    `Median safety %` = median(safety, na.rm = TRUE),
+    `Median affordability %` = median(affordability, na.rm = TRUE)
+  ) |>
+  ungroup() |>
+  rename(Region = region) |> 
+  arrange(desc(`Median index`))
+
+datatable(
+  summary_stats,
+  caption = htmltools::tags$caption(
+    style = 'caption-side: top; text-align: center;',
+    htmltools::strong('Rental Affordability & Safety Index across Regions in Melbourne Metropolitan (2024)'),
+    htmltools::br(),
+    htmltools::em('Index = Median Weekly Rent * 0.6 + Incident Rate * 0.4')
+  ),
+  options = list(
+    pageLength = 10,
+    dom = 't',
+    columnDefs = list(
+      list(className = 'dt-center', targets = 1:7)
+    )
+  ),
+  rownames = FALSE
+) |>
+  formatRound(columns = c("Median rent (/wk)", "Median incident rate", 
+                          "Median safety %", "Median affordability %", 
+                          "Median index"), digits = 1) |>
+  formatRound(columns = "Population", digits = 0, mark = ",")
+```
+
+```{r}
+#| label: fig-scatter-plot
+#| fig-cap: ""
+#| fig-width: 10
+
+region_colors <- c(
+  "Eastern Region" = "#66c2a5",
+  "Inner Metro Region" = "#fc8d62",
+  "Inner South East Region" = "#8da0cb",
+  "Northern Region" = "#e78ac3",
+  "Southern Region" = "#a6d854",
+  "Western Region" = "#ffd92f"
+)
+
+p <- ggplot(index, aes(x = median_rent_weekly, y = log10_incident_rate)) +
+  geom_point_interactive(
+    aes(color = region, 
+        tooltip = text,
+        data_id = sal_code_2021),
+    alpha = 0.5
+  ) +
+  geom_vline(
+    xintercept = median(index$median_rent_weekly), 
+    linetype = "dashed", color = "gray40") +
+  geom_hline(
+    yintercept = median(index$log10_incident_rate), 
+    linetype = "dashed", color = "gray40") +  
+  scale_color_manual(values = region_colors) +
+  facet_wrap(~region, ncol = 6) +
+  coord_flip() +
+  labs(
+    title = "Median Weekly Rent vs Incident Rate by Region",
+    subtitle = "Hover for details",
+    x = "Median Weekly Rent ($)",
+    y = "Incident Rate (per 100 residents) (Log10)"
+  ) +
+  theme(
+    legend.position = "none"
+  )
+
+girafe(
+  ggobj = p,
+  width_svg = 12,
+  height_svg = 6,
+  options = list(
+    opts_hover(css = "fill:black;stroke:black;stroke-width:2;"),
+    opts_tooltip(css = "background-color:white;padding:10px;border-radius:5px;box-shadow:0 0 10px rgba(0,0,0,0.5);")
+  )
+)
+```
+
+No strong negative rent-safety link overall  but clear regional clusters: inner/metro pay premium for location not safety.
+
+- The city (Inner Metro Region) is where the most incidents were recorded, while the rent here is second highest. As seen in @fig-scatter-plot, most of its suburbs belong to the upper right quadrant where both rent and incident rates are higher than state median. 
+- The more affluent areas (Inner South East and Eastern) have the highest Price-to-Safety index. Inner South East is home of the most affluent suburbs, i.e., Kooyong, Kew, Brighton, etc. Eastern is generally known for the higher middle class, reflecting in cheaper rents compared to Inner South East and Inner Metro Region, while maintaining superiorly low incident rates.
+
+## The best bet for Value suburbs (low rent, high safety) is in Eastern and Northern regions
+
+```{r}
+# Create contingency table with percentages
+heatmap_data <- index %>%
+  count(region, group) %>%
+  group_by(region) %>%
+  mutate(pct = n / sum(n) * 100) %>%
+  ungroup() %>%
+  mutate(region = reorder(region, -n))  # Order regions by total count (largest first)
+
+# Heatmap: color by group, size/alpha by pct
+ggplot(heatmap_data, 
+  aes(
+    x = region,
+    y = reorder(group, pct, FUN = median), 
+    fill = group
+  )) +  # Alpha 0-1
+  geom_tile(
+    aes(alpha = pct/100), 
+    color = "white", 
+    size = 0.5) +
+  geom_text(aes(label = paste0(round(pct, 1), "%")), 
+            color = "black", fontface = "bold", size = 3.5) +
+  scale_alpha_identity() + 
+  scale_fill_manual(values = c(
+    "Overpriced" = "#d73027",
+    "Underrated" = "#2ca25f",
+    "Premium Safe" = "#4575b4",
+    "Cheap Risk" = "#fdae61"
+  )) +
+  labs(title = "Region vs Group Distribution",
+       y = "Suburb category", x = "Region") +
+  theme_classic() +
+  theme(
+    axis.text.x = element_text(angle = 45, hjust = 1),
+    legend.position = "none")
+```
+
+- Eastern and Southern have the highest percentage of suburbs categorized as "Value". This is where renters are most likely to find the best deals. 
+- The Western and Inner Metro region are not as preferred given the higher composition of "Not worth it" and "Overpriced" suburbs.
+
+## Explore the metrics on each suburb
+
+The map and table below helps users look for metrics of specific suburbs. These visualization can assist the production of SEO articles, listing pages or landing pages where users can quickly assess one suburb over another. 
+
+```{r map}
+hexagons <- read_csv(here::here("posts/price_to_safety_index_melb/data/sugarbag_hexagon.csv"))
+
+# Filter region boundaries
+region_boundaries <- region_boundary |>
+  filter(region != "Regional")
+
+# Create the ggplot object
+p2 <- ggplot() +
+  geom_sf(data = index, fill = NA, color = "gray70") +
+  geom_polygon_interactive(
+    data = hexagons,
+    aes(x = long, y = lat, 
+        group = hex_id,
+        fill = index,
+        tooltip = text),
+    color = "white",
+    size = 0.2
+  ) +
+  geom_sf(data = region_boundaries, fill = NA, color = "gray30", size = 0.3) +
+  scale_fill_gradient2(
+    low = "#d73027",
+    mid = "#999999",
+    high = "#4575b4",
+    midpoint = 50,
+    name = "Index"
+  ) +
+  labs(
+    title = "Rental Affordability & Safety Index across Suburbs in Melbourne Metropolitan (2024)",
+    subtitle = "Hover for details"
+  ) +
+  theme_void() +
+  theme(legend.position = "right") +
+  coord_sf()
+
+girafe(
+  ggobj = p2,
+  width_svg = 8,
+  height_svg = 6,
+  options = list(
+    opts_hover(css = "fill:black;stroke:black;stroke-width:2;"),
+    opts_tooltip(css = "background-color:white;padding:10px;border-radius:5px;box-shadow:0 0 10px rgba(0,0,0,0.5);")
+  )
+)
+```
+
+```{r}
+suburb_stats <- index |>
+  st_drop_geometry() |> 
+  select(
+    Region = region,
+    Suburb = sal_name_2021,
+    Population = tot_p_p,
+    `Median rent (/wk)` = median_rent_weekly,
+    `Incident rate` = incident_rate,
+    Index = index,
+    Category = group
+  ) |> 
+  arrange(desc(Index))
+
+datatable(
+  suburb_stats,
+  caption = htmltools::tags$caption(
+    style = 'caption-side: top; text-align: center;',
+    htmltools::strong('Suburb Statistics'),
+    htmltools::br(),
+    htmltools::em('Melbourne Safety and Affordability Index')
+  ),
+  options = list(
+    pageLength = 10,
+    dom = 'ftip',
+    columnDefs = list(
+      list(className = 'dt-center', targets = 2:7)
+    )
+  ),
+  rownames = FALSE,
+  filter = 'top'
+) |>
+  formatRound(columns = c("Median rent (/wk)", "Incident rate", 
+                          "Index"), digits = 1) |>
+  formatRound(columns = "Population", digits = 0, mark = ",")
+```
+
+# Recommendation
+
+Price-to-Safety index is a valuable tool to offer to users to help them make informed decisions on where to live given the distinct differences in rent and crime risk across Melbourne suburbs. This tool can complement their search, and help them find the hidden gems and dangers of the city. 
+
+There are several ways to put this tool to production:
+
+1. As a widget/tag on a listing: Users can quickly assess the safety and afforability of a listing's suburb and compare it to the surrounding areas when browsing through listings.
+2. As a SEO and GEO on-page content to draw traffic
+3. As a data app with interactive dashboards and calculators: Users interactively explore their options, and adjust the weights of different factors (rent vs safety) to find the best areas based on their preferences. 
+
+# Possible avenues for future projects
+
+- Build data pipeline to have the data product reproducible with new data updates from sources
+- Include new factors to the index, e.g., distance to points of interest, availability of public transports, etc. 

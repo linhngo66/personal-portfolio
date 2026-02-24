@@ -1,6 +1,7 @@
 ---
 title: "End-to-end implementation of Mixpanel for self-service product analytics"
-category: case studies
+categories: case studies
+author: Linh Ngo
 image: "images/thumbnail.png"
 toc: true
 tbl-cap-location: bottom

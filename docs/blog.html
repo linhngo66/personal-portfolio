@@ -78,9 +78,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-image','listing-title','listing-description','listing-category',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-image','listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description","listing-categories"],
+      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -131,7 +131,7 @@ window.Quarto = {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -184,9 +184,7 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(3)</span></div></div></div>
+    
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -215,7 +213,29 @@ window.Quarto = {
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0">
+<div class="quarto-post image-right" data-index="0" data-listing-file-modified-sort="1771909626205" data-listing-reading-time-sort="16" data-listing-word-count-sort="3151">
+<div class="thumbnail">
+<p><a href="./posts/price_to_safety_index_melb/index.html" class="no-external"></a></p><a href="./posts/price_to_safety_index_melb/index.html" class="no-external">
+<p><img loading="lazy" src="./posts/price_to_safety_index_melb/melb_sa2_abs.png" class="thumbnail-image"></p>
+</a><p><a href="./posts/price_to_safety_index_melb/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/price_to_safety_index_melb/index.html" class="no-external">Are you paying higher rent for better security in Melbourne?</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/price_to_safety_index_melb/index.html" class="no-external"></a>
+</div>
+<div class="listing-description">
+<a href="./posts/price_to_safety_index_melb/index.html" class="no-external">I developed a Price-to-Safety index to compare the safety and affordability of suburbs in Melbourne when it comes to rental.</a>
+</div>
+</div>
+<div class="metadata">
+<p><a href="./posts/price_to_safety_index_melb/index.html" class="no-external"></a></p><a href="./posts/price_to_safety_index_melb/index.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1">
 <div class="thumbnail">
 <p><a href="https://github.com/linhngo66/MTR-station-accessibility-audit" class="no-external"></a></p><a href="https://github.com/linhngo66/MTR-station-accessibility-audit" class="no-external">
 <p><img loading="lazy" src="mtr_station_profile.png" class="thumbnail-image"></p>
@@ -237,7 +257,7 @@ window.Quarto = {
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-listing-file-modified-sort="1771844527256" data-listing-reading-time-sort="5" data-listing-word-count-sort="866">
+<div class="quarto-post image-right" data-index="2" data-listing-file-modified-sort="1771844527256" data-listing-reading-time-sort="5" data-listing-word-count-sort="866">
 <div class="thumbnail">
 <p><a href="./posts/mixpanel-implementation/index.html" class="no-external"></a></p><a href="./posts/mixpanel-implementation/index.html" class="no-external">
 <p><img loading="lazy" src="./posts/mixpanel-implementation/images/thumbnail.png" class="thumbnail-image"></p>
@@ -256,13 +276,10 @@ window.Quarto = {
 </div>
 <div class="metadata">
 <p><a href="./posts/mixpanel-implementation/index.html" class="no-external"></a></p><a href="./posts/mixpanel-implementation/index.html" class="no-external">
-<div class="metadata-value listing-category">
-case studies
-</div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-listing-file-modified-sort="1771848298273" data-listing-reading-time-sort="1" data-listing-word-count-sort="106">
+<div class="quarto-post image-right" data-index="3" data-listing-file-modified-sort="1771848298273" data-listing-reading-time-sort="1" data-listing-word-count-sort="106">
 <div class="thumbnail">
 <p><a href="./posts/prefviz/index.html" class="no-external"></a></p><a href="./posts/prefviz/index.html" class="no-external">
 <p><img loading="lazy" src="./posts/prefviz/abcnews_2025.png" class="thumbnail-image"></p>
@@ -281,9 +298,6 @@ case studies
 </div>
 <div class="metadata">
 <p><a href="./posts/prefviz/index.html" class="no-external"></a></p><a href="./posts/prefviz/index.html" class="no-external">
-<div class="metadata-value listing-category">
-case studies
-</div>
 </a>
 </div>
 </div>

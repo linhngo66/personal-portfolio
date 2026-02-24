@@ -2,6 +2,7 @@
   {
     "listing": "/blog.html",
     "items": [
+      "/posts/price_to_safety_index_melb/index.html",
       "/posts/mixpanel-implementation/index.html",
       "/posts/prefviz/index.html"
     ]
