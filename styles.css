@@ -10,6 +10,7 @@ body {
 /* Make sure all text elements use Segoe UI consistently */
 p, ul, ol, li, span, div, section, article, .about-content, .about-description {
   font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-size: 1.02rem !important;
 }
 
 /* Optional: tweak list spacing for Segoe UI */
@@ -88,4 +89,27 @@ ul, ol {
 /* Adjust the font */
 .about-content {
   font-family: "Segoe UI", Roboto, sans-serif;
+}
+
+/* Override Quarto's page-columns grid for desktop */
+@media (min-width: 992px) {
+  /* Match homepage exactly */
+  body.fullcontent:not(.floating):not(.docked) .page-columns,
+  /* Plus all other page types */
+  #quarto-content .page-columns,
+  body .page-columns {
+    grid-template-columns: 
+      [screen-start] 1.5em 
+      [screen-start-inset] 5fr 
+      [page-start page-start-inset] 35px 
+      [body-start-outset] 35px 
+      [body-start] 1.5em 
+      [body-content-start] minmax(500px, calc(1200px - 3em)) 
+      [body-content-end] 1.5em 
+      [body-end] 35px 
+      [body-end-outset] minmax(75px, 145px) 
+      [page-end-inset] 35px 
+      [page-end] 5fr 
+      [screen-end-inset] 1.5em [screen-end]
+  }
 }

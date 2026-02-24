@@ -1,6 +1,7 @@
 ---
 title: "Are you paying higher rent for better security in Melbourne?"
 description: I developed a Price-to-Safety index to compare the safety and affordability of suburbs in Melbourne when it comes to rental.
+author: Linh Ngo
 toc: true
 categories: analysis
 image: melb_sa2_abs.png

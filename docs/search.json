@@ -4,7 +4,7 @@
     "href": "blog.html",
     "title": "Blog",
     "section": "",
-    "text": "Are you paying higher rent for better security in Melbourne?\n\n\n\n\n\nI developed a Price-to-Safety index to compare the safety and affordability of suburbs in Melbourne when it comes to rental.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAuditing elderly accessibility of MTR stations in Hong Kong\n\n\n\n\n\nWhich MTR stations needs improvement to better accomodate the ageing population in Hong Kong? I developed an assessment framework to evaluate how well MTR stations serve elderly population.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEnd-to-end implementation of Mixpanel for self-service product analytics\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPutting ternary plots on higher-dimensional spaces\n\n\n\n\n\nI developed a new R software package that make drawing ternary plots on higher-dimensional spaces, with interactivity easier\n\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Are you paying higher rent for better security in Melbourne?\n\n\n\n\n\n\nanalysis\n\n\n\nI developed a Price-to-Safety index to compare the safety and affordability of suburbs in Melbourne when it comes to rental.\n\n\n\n\n\nLinh Ngo\n\n\n\n\n\n\n\n\n\n\n\n\nAuditing elderly accessibility of MTR stations in Hong Kong\n\n\n\n\n\n\nanalysis\n\n\n\nWhich MTR stations needs improvement to better accomodate the ageing population in Hong Kong? I developed an assessment framework to evaluate how well MTR stations serve elderly population.\n\n\n\n\n\nLinh Ngo\n\n\n\n\n\n\n\n\n\n\n\n\nEnd-to-end implementation of Mixpanel for self-service product analytics\n\n\n\n\n\n\ncase studies\n\n\n\n\n\n\n\n\n\nLinh Ngo\n\n\n\n\n\n\n\n\n\n\n\n\nPutting ternary plots on higher-dimensional spaces\n\n\n\n\n\n\ncase studies\n\n\n\nI developed a new R software package that make drawing ternary plots on higher-dimensional spaces, with interactivity easier\n\n\n\n\n\nLinh Ngo\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
@@ -95,7 +95,7 @@
     "href": "posts/prefviz/index.html",
     "title": "Putting ternary plots on higher-dimensional spaces",
     "section": "",
-    "text": "I recently explored the world of computational statistics, or put it simply,building softwares that implement statistical theories. For me, it was building new visualization methods that can help me better understand the data I’m working with.\nprefviz is a new R package for interactive and high-dimensional ternary plot that I developed, along with my supervisors Di and Damjan. Hopefully I can publish it on CRAN (aka production version of R packages) by end of March 2026!\nFind out more about the package and its features via:\n\nprefviz website\nprefviz presentation"
+    "text": "I recently explored the world of computational statistics, or put it simply, building softwares that implement statistical theories. For me, it was building new visualization methods and softwares that can help me better understand the data I’m working with.\nprefviz is a new R package for interactive and high-dimensional ternary plot that I developed, along with my supervisors Di and Damjan. Hopefully I can publish it on CRAN (aka production version of R packages) by end of March 2026!\n\n\n\nI think this gif makes you a bit more curious about what ternary plot is (hopefully)\n\n\nFind out more about the package and its features via:\n\nprefviz website\nprefviz presentation"
   },
   {
     "objectID": "posts/price_to_safety_index_melb/index.html",

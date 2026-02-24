@@ -1,6 +1,7 @@
 ---
 title: "Putting ternary plots on higher-dimensional spaces"
 description: "I developed a new R software package that make drawing ternary plots on higher-dimensional spaces, with interactivity easier"
+author: Linh Ngo
 categories: case studies
 image: "abcnews_2025.png"
 toc: true
