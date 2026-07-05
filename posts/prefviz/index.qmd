@@ -9,9 +9,7 @@ toc: true
 
 I recently explored the world of computational statistics, or put it simply, building softwares that implement statistical theories. For me, it was **building new visualization methods and softwares** that can help me better understand the data I'm working with.
 
-[`prefviz`](https://numbats.github.io/prefviz/) is a new R package for interactively explore preferential data. Preferential data is data that expresses individuals preferences over a set of items, i.e., voters rank candidates in a ballot paper, customers rank product preference, atheletes are ranked in a tournament, etc. 
-
-The primary example I used for the package and my successive analysis is the Australian election, where voters rank their preferences for candidates from the highest to the lowest.
+[`prefviz`](https://numbats.github.io/prefviz/) is a new R package for interactively explore preferential data. Preferential data is data that expresses individuals preferences over a set of items, i.e., voters rank candidates in a ballot paper, customers rank product preference, atheletes are ranked in a tournament, etc. The primary example I used for the package and my successive analysis is the Australian election, where voters rank their preferences for candidates from the highest to the lowest.
 
 **Why I built `prefviz`?**
 
