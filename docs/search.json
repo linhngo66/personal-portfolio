@@ -1,103 +1,5 @@
 [
   {
-    "objectID": "blog.html",
-    "href": "blog.html",
-    "title": "Blog",
-    "section": "",
-    "text": "Are you paying higher rent for better security in Melbourne?\n\n\n\n\n\n\nanalysis\n\n\n\nI developed a Price-to-Safety index to compare the safety and affordability of suburbs in Melbourne when it comes to rental.\n\n\n\n\n\nLinh Ngo\n\n\n\n\n\n\n\n\n\n\n\n\nAuditing elderly accessibility of MTR stations in Hong Kong\n\n\n\n\n\n\nanalysis\n\n\n\nWhich MTR stations needs improvement to better accomodate the ageing population in Hong Kong? I developed an assessment framework to evaluate how well MTR stations serve elderly population.\n\n\n\n\n\nLinh Ngo\n\n\n\n\n\n\n\n\n\n\n\n\nEnd-to-end implementation of Mixpanel for self-service product analytics\n\n\n\n\n\n\ncase studies\n\n\n\n\n\n\n\n\n\nLinh Ngo\n\n\n\n\n\n\n\n\n\n\n\n\nPutting ternary plots on higher-dimensional spaces\n\n\n\n\n\n\ncase studies\n\n\n\nI developed a new R software package that make drawing ternary plots on higher-dimensional spaces, with interactivity easier\n\n\n\n\n\nLinh Ngo\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Linh Ngo",
-    "section": "",
-    "text": "I build data systems and business processes that connect business strategy with execution — from designing analytics pipelines, data models, and dashboards that drive measurable impact, to building and optimizing team operations.\n\n\nProfessionally, my work sits at the intersection of data analytics, analytics engineering, and business strategy.\nI’ve built and scaled analytics in fintech, SaaS, and consulting - from optimizing data pipelines and implementing self-service analytics at a U.S. tech startup, to leading growth and customer operations at a Vietnamese fintech, and supporting a business transformation for a major bank client.\nPersonally, I’m a long-distance runner, a frequent cafe-goer, a solo traveler, and a journaler. Fun fact: I have solo-travelled around SEA, I finish 13 journals every year on average.\nFind out more about my work through my blogs and github repo.\n\n\n\n\nRelearning and diving deeper into data engineering and pipeline design - exploring how modern data stacks can bridge the gap between technical systems and business impact\nDeveloping new visualization methods to support high-dimensional compositional data through my new R package prefviz\nPursuing my project R1000, where I try to get rejected 1000 times in 2026 to get more comfortable with rejections and more importantly, take myself closer to my career and life goals. (Last updated: 53 rejections by 2026-02-21)\n\n\n\n\n\nLanguages: SQL, Python, R\nTools: dbt, Airbyte, Fivetran, Airflow, Git, Power BI, Tableau, Google Data Studio\nCloud: Snowflake, Azure Data Factory\nSkills: ELT & data modelling, CI/CD for pipelines, data quality monitoring, and metric standardization"
-  },
-  {
-    "objectID": "index.html#hi-im-linh",
-    "href": "index.html#hi-im-linh",
-    "title": "Linh Ngo",
-    "section": "",
-    "text": "I build data systems and business processes that connect business strategy with execution — from designing analytics pipelines, data models, and dashboards that drive measurable impact, to building and optimizing team operations.\n\n\nProfessionally, my work sits at the intersection of data analytics, analytics engineering, and business strategy.\nI’ve built and scaled analytics in fintech, SaaS, and consulting - from optimizing data pipelines and implementing self-service analytics at a U.S. tech startup, to leading growth and customer operations at a Vietnamese fintech, and supporting a business transformation for a major bank client.\nPersonally, I’m a long-distance runner, a frequent cafe-goer, a solo traveler, and a journaler. Fun fact: I have solo-travelled around SEA, I finish 13 journals every year on average.\nFind out more about my work through my blogs and github repo.\n\n\n\n\nRelearning and diving deeper into data engineering and pipeline design - exploring how modern data stacks can bridge the gap between technical systems and business impact\nDeveloping new visualization methods to support high-dimensional compositional data through my new R package prefviz\nPursuing my project R1000, where I try to get rejected 1000 times in 2026 to get more comfortable with rejections and more importantly, take myself closer to my career and life goals. (Last updated: 53 rejections by 2026-02-21)\n\n\n\n\n\nLanguages: SQL, Python, R\nTools: dbt, Airbyte, Fivetran, Airflow, Git, Power BI, Tableau, Google Data Studio\nCloud: Snowflake, Azure Data Factory\nSkills: ELT & data modelling, CI/CD for pipelines, data quality monitoring, and metric standardization"
-  },
-  {
-    "objectID": "posts/hai-in-germany/index.html",
-    "href": "posts/hai-in-germany/index.html",
-    "title": "Quantifying Healthcare-associated Infection in Germany: Research Reveals Heavy Burden from Preventable Harm",
-    "section": "",
-    "text": "Hospitals are designed to heal, yet many patients leave them sicker than when they arrived — not because of their original illness, but because of healthcare-associated infections (HAIs). These infections arise during hospital care and are a major cause of avoidable deaths, disability, and healthcare costs across Europe. Germany is known for its advanced medical infrastructure and high hygiene standards. Yet, data from Zacher et al. (2019) suggest that its infection burden may be higher than the European average.\nI’m exploring how severe HAIs-related health burden actually is, and what factors might explain the paradox of high infection rates in a strong healthcare system through a deep-dive into the paper “Application of a new methodology and R package reveals a high burden of healthcare-associated infections (HAI) in Germany compared to the average in the European Union/European Economic Area, 2011 to 2012” by Zacher et al. (2019)."
-  },
-  {
-    "objectID": "posts/hai-in-germany/index.html#what-is-healthcare-associated-infection-hai",
-    "href": "posts/hai-in-germany/index.html#what-is-healthcare-associated-infection-hai",
-    "title": "Quantifying Healthcare-associated Infection in Germany: Research Reveals Heavy Burden from Preventable Harm",
-    "section": "What is healthcare-associated infection (HAI)?",
-    "text": "What is healthcare-associated infection (HAI)?\nHAI is a term used to describe infectious diseases that are associated with hospitalizations. These infections can arise from a variety of sources, including infections from patients, staff, and equipment.\nThis study focuses on five most common HAIs, namely:\n\nHealthcare-associated Clostridioides difficile infection (CDI)\nHealthcare-associated pneumonia (HAP)\nHealthcare-associated primary bloodstream infection (BSI)\nHealthcare-associated urinary tract infection (UTI)\nSurgical site infection (SSI)"
-  },
-  {
-    "objectID": "posts/hai-in-germany/index.html#how-is-hais-related-health-burden-measured",
-    "href": "posts/hai-in-germany/index.html#how-is-hais-related-health-burden-measured",
-    "title": "Quantifying Healthcare-associated Infection in Germany: Research Reveals Heavy Burden from Preventable Harm",
-    "section": "How is HAIs-related health burden measured?",
-    "text": "How is HAIs-related health burden measured?\nThe author measures HAIs-related health burden through 3 key metrics:\n\nThe number of HAIs incidence\nThe number of deaths attributed to each HAI\nThe number of disability-adjusted life years (DALYs) due to HAIs: DALYs is a measure of years of lost healthy life, combining years of life lost (YLLs) with years lived with disability (YLDs). This metric enables a common ground to rank and compare the health burden of different HAIs.\n\nData used in this analysis is collected from European Centre for Disease Prevention and Control (ECDC) Point Prevalence Survey (2011–2012).\nAnalysis method is a built-upon from the Burden of Communicable Diseases in Europe (BCoDE) framework, yet enabling a more reliable estimation of HAIs-related health burden in cases of smaller sample size and varying survey protocols. You can find out more about their methodology through the accompanying R packages BHAI."
-  },
-  {
-    "objectID": "posts/hai-in-germany/index.html#what-does-the-data-reveal",
-    "href": "posts/hai-in-germany/index.html#what-does-the-data-reveal",
-    "title": "Quantifying Healthcare-associated Infection in Germany: Research Reveals Heavy Burden from Preventable Harm",
-    "section": "What does the data reveal?",
-    "text": "What does the data reveal?\nA substantial and concerning burden of HAIs is found in Germany, especially when benchmarked against other European countries, and other communicable diseases.\n\nOverall HAIs-related health burden\n\n\n\nTable 1: Annual burden of five types of HAIs in Germany\n\n\n\n\n\n\nThe study estimated 478,222 cases of the five selected HAIs in Germany, leading to 16,245 attributable deaths and 248,920 DALYs (Table 1).\nTo put these number into perspective, the author benchmarked the burden of HAIs against other common communicable diseases like influenza, Salmonella, hepatitis B, and measles. The comparison is staggering: The burden of all five HAIs combined (308.2 DALYs per 100,000 population) is almost eight times higher than the combined burden of four common communicable diseases (39.4 DALYs per 100,000 population).\n\n\n\nTable 2: Comparison the EU/EEA average further emphasizes a heavier national burden despite strong hygiene standards.\n\n\n\n\n\n\nFurthermore, the burden of HAIs in Germany is overall higher than the EU/EEA average, with HAIs incidence being 27% higher, attributable death being 29% higher and DALYs being 6% higher (Table 2).\n\n\nDisproportionate impact of HAIs\nThe sheer volume of HAIs is just one part of the story, but the analysis also revealed a crucial insights into where the true severity lies - fatality rate.\n\n\n\n\n\n\nFigure 1: Contribution to overall burden is not evenly distributed across five HAIs due to differences in fatality rate, with HAP and BSI being much more deadly despite lower case number.\n\n\n\nAs shown in Figure 1 and Table 2, Healthcare-associated Pneumonia (HAP) and Primary Bloodstream Infection (BSI) were responsible for a whopping 51% of all DALYs, even though they represented only 28% of the total cases. In contrast, UTI registered 45% of all cases, yet only 27% of DALYs. These number show the deadly impact of HAP and BSI, calling for aggressive prevention measures for these diseases.\n\n\nReasons lie in the capacity challenge\nGiven the high hygiene standard imposed across German healthcare system, the existing substantial burden of HAIs is rather surprising. A deeper look into the system suggests the potential root cause being the country’s large hospital capacity and high hospitalization rate. Even with generally good hygiene standards, a higher volume of patients being admitted means more individuals are exposed to the risk of acquiring an HAI. When you increase the population at risk, the overall incidence per general population rises, inflating the total burden metrics."
-  },
-  {
-    "objectID": "posts/hai-in-germany/index.html#conclusion-what-we-learnt-and-the-way-forward",
-    "href": "posts/hai-in-germany/index.html#conclusion-what-we-learnt-and-the-way-forward",
-    "title": "Quantifying Healthcare-associated Infection in Germany: Research Reveals Heavy Burden from Preventable Harm",
-    "section": "Conclusion: What we learnt and The way forward",
-    "text": "Conclusion: What we learnt and The way forward\nThe central question - how severe is HAIs-related health burden actually in Germany? - is answered by three key findings:\n\nThe absolute burden of HAIs in Germany is substantial (≈ 250,000 DALYs annually), yet impacts differ across types of HAIs due to varying fatality rate.\nRelative to other diseases, HAIs account for almost eight times more healthy life lost.\nRelative to other European nations, HAIs-related health burder in Germany is modestly but consistently 6% higher.\nOne potential driven for such heavy burden is from high volume of hospital admission, inflating the number of incidents and total burden metrics.\n\nSuch findings imply the critical role of reducing unnecessary hospitalization and continued adherence to hygiene and infection prevention measures on alleviating HAIs burden in Germany."
-  },
-  {
-    "objectID": "posts/mixpanel-implementation/index.html",
-    "href": "posts/mixpanel-implementation/index.html",
-    "title": "End-to-end implementation of Mixpanel for self-service product analytics",
-    "section": "",
-    "text": "This is how I helped Otrafy’s CEO, who is my career role model to this day, provide complete visibility into user behavior and retention, and empower non-technical users to self-serve their analytics needs with a product analytics tool - Mixpanel.\nOtrafy is a B2B SaaS company that provides a document management platform for food manufacturers to collaborate with their suppliers, ensure their food safety and compliance with FDA regulations. The company was undergoing a major strategic shift from door-to-door sales and onboarding to a freemium, self-service model. Leadership anticipated a surge in user sign-ups and activation volumns, and would like to understand more about the user journey upon sign-up, and identify any bottlenecks in the onboarding process. In order to do so, the company needs to implement a product analytics tool that can track user behavior and provide insights into user engagement and retention."
-  },
-  {
-    "objectID": "posts/mixpanel-implementation/index.html#provider-selections",
-    "href": "posts/mixpanel-implementation/index.html#provider-selections",
-    "title": "End-to-end implementation of Mixpanel for self-service product analytics",
-    "section": "Provider selections",
-    "text": "Provider selections\nThe market for product analytics tools is crowded, with a wide range of options available. Along with Mixpanel, I evaluated severals, including Amplitude, Heap, Segment, Google Analytics, etc.\nBelow are the criteria I used to evaluate and compare different providers:\n\nPricing - Does the pricing fit the company’s annual budget and anticipated growth?\nEase of implementation - How much time and how many engineers would be required to implement the solution?\nAvailability of SDKs, community support and customer services - How easy is it to get help?\nIntegration with existing stack - Is reverse ETL possible to sync data back to the data warehouse? Can it integrate with other tools in the stack, such as CRM, marketing automation, etc.?\nAnalytics functionality - What are the ranges of metrics and visualizations that the tool can provide?\nLearning curve for non-technical users - How easy is it to get started with the tool?\n\nIn the end, Mixpanel won for its ease of implementation, availability of supports and documentation, and comprehensive analytics functionality. The pricing was also reasonable for the company’s needs and budget."
-  },
-  {
-    "objectID": "posts/mixpanel-implementation/index.html#requirement-mapping",
-    "href": "posts/mixpanel-implementation/index.html#requirement-mapping",
-    "title": "End-to-end implementation of Mixpanel for self-service product analytics",
-    "section": "Requirement mapping",
-    "text": "Requirement mapping\nProducts and Customer Success team were the main users for the solution. Upon discussion, the team and I agreed to cover the entire platform feature set, and all buttons and options in the UI in a phased approach.\nThe first phase would cover the early stages of user journey (sign-up, onboarding, activation, etc.) and core features (create documents, send requests, etc.). The second phase would cover additional features such as customer support, feedback, and analytics.\nThe solution is expected to cover the entire user journey, from sign-up, onboarding to activation and beyond."
-  },
-  {
-    "objectID": "posts/mixpanel-implementation/index.html#co-development-with-engineering-team",
-    "href": "posts/mixpanel-implementation/index.html#co-development-with-engineering-team",
-    "title": "End-to-end implementation of Mixpanel for self-service product analytics",
-    "section": "Co-development with Engineering team",
-    "text": "Co-development with Engineering team\nIn collaboration with the Engineering team, I worked on the following three areas:\n\nSupervise the implementation of tracking user events and properties using Mixpanel’s APIs, and provide requirement clarification when needed.\nDesigned pipeline to reverse ETL data to Mixpanel, and integrate data from Mixpanel with other tools like CRM, marketing automation, etc.\nDevelop a one-stop product analytics dashboard in Mixpanel for key metrics\n\n\n\n\nSource: Mixpanel’s Documentation"
-  },
-  {
-    "objectID": "posts/mixpanel-implementation/index.html#user-education",
-    "href": "posts/mixpanel-implementation/index.html#user-education",
-    "title": "End-to-end implementation of Mixpanel for self-service product analytics",
-    "section": "User education",
-    "text": "User education\nI held a number of training sessions with the Product, Customer Success and Leadership team to onboard them to the new tools. The training sessions were hands-on, and accompanied by mini-homeworks and documentations to ensure understanding."
-  },
-  {
-    "objectID": "posts/prefviz/index.html",
-    "href": "posts/prefviz/index.html",
-    "title": "Putting ternary plots on higher-dimensional spaces",
-    "section": "",
-    "text": "I recently explored the world of computational statistics, or put it simply, building softwares that implement statistical theories. For me, it was building new visualization methods and softwares that can help me better understand the data I’m working with.\nprefviz is a new R package for interactive and high-dimensional ternary plot that I developed, along with my supervisors Di and Damjan. Hopefully I can publish it on CRAN (aka production version of R packages) by end of March 2026!\n\n\n\nI think this gif makes you a bit more curious about what ternary plot is (hopefully)\n\n\nFind out more about the package and its features via:\n\nprefviz website\nprefviz presentation"
-  },
-  {
     "objectID": "posts/price_to_safety_index_melb/index.html",
     "href": "posts/price_to_safety_index_melb/index.html",
     "title": "Are you paying higher rent for better security in Melbourne?",
@@ -138,5 +40,68 @@
     "title": "Are you paying higher rent for better security in Melbourne?",
     "section": "Explore the metrics on each suburb",
     "text": "Explore the metrics on each suburb\nThe map and table below helps users look for metrics of specific suburbs. These visualization can assist the production of SEO articles, listing pages or landing pages where users can quickly assess one suburb over another."
+  },
+  {
+    "objectID": "posts/mixpanel-implementation/index.html",
+    "href": "posts/mixpanel-implementation/index.html",
+    "title": "End-to-end implementation of Mixpanel for self-service product analytics",
+    "section": "",
+    "text": "This is how I helped Otrafy’s CEO, who is my career role model to this day, provide complete visibility into user behavior and retention, and empower non-technical users to self-serve their analytics needs with a product analytics tool - Mixpanel.\nOtrafy is a B2B SaaS company that provides a document management platform for food manufacturers to collaborate with their suppliers, ensure their food safety and compliance with FDA regulations. The company was undergoing a major strategic shift from door-to-door sales and onboarding to a freemium, self-service model. Leadership anticipated a surge in user sign-ups and activation volumns, and would like to understand more about the user journey upon sign-up, and identify any bottlenecks in the onboarding process. In order to do so, the company needs to implement a product analytics tool that can track user behavior and provide insights into user engagement and retention."
+  },
+  {
+    "objectID": "posts/mixpanel-implementation/index.html#provider-selections",
+    "href": "posts/mixpanel-implementation/index.html#provider-selections",
+    "title": "End-to-end implementation of Mixpanel for self-service product analytics",
+    "section": "Provider selections",
+    "text": "Provider selections\nThe market for product analytics tools is crowded, with a wide range of options available. Along with Mixpanel, I evaluated severals, including Amplitude, Heap, Segment, Google Analytics, etc.\nBelow are the criteria I used to evaluate and compare different providers:\n\nPricing - Does the pricing fit the company’s annual budget and anticipated growth?\nEase of implementation - How much time and how many engineers would be required to implement the solution?\nAvailability of SDKs, community support and customer services - How easy is it to get help?\nIntegration with existing stack - Is reverse ETL possible to sync data back to the data warehouse? Can it integrate with other tools in the stack, such as CRM, marketing automation, etc.?\nAnalytics functionality - What are the ranges of metrics and visualizations that the tool can provide?\nLearning curve for non-technical users - How easy is it to get started with the tool?\n\nIn the end, Mixpanel won for its ease of implementation, availability of supports and documentation, and comprehensive analytics functionality. The pricing was also reasonable for the company’s needs and budget."
+  },
+  {
+    "objectID": "posts/mixpanel-implementation/index.html#requirement-mapping",
+    "href": "posts/mixpanel-implementation/index.html#requirement-mapping",
+    "title": "End-to-end implementation of Mixpanel for self-service product analytics",
+    "section": "Requirement mapping",
+    "text": "Requirement mapping\nProducts and Customer Success team were the main users for the solution. Upon discussion, the team and I agreed to cover the entire platform feature set, and all buttons and options in the UI in a phased approach.\nThe first phase would cover the early stages of user journey (sign-up, onboarding, activation, etc.) and core features (create documents, send requests, etc.). The second phase would cover additional features such as customer support, feedback, and analytics.\nThe solution is expected to cover the entire user journey, from sign-up, onboarding to activation and beyond."
+  },
+  {
+    "objectID": "posts/mixpanel-implementation/index.html#co-development-with-engineering-team",
+    "href": "posts/mixpanel-implementation/index.html#co-development-with-engineering-team",
+    "title": "End-to-end implementation of Mixpanel for self-service product analytics",
+    "section": "Co-development with Engineering team",
+    "text": "Co-development with Engineering team\nIn collaboration with the Engineering team, I worked on the following three areas:\n\nSupervise the implementation of tracking user events and properties using Mixpanel’s APIs, and provide requirement clarification when needed.\nDesigned pipeline to reverse ETL data to Mixpanel, and integrate data from Mixpanel with other tools like CRM, marketing automation, etc.\nDevelop a one-stop product analytics dashboard in Mixpanel for key metrics\n\n\n\n\nSource: Mixpanel’s Documentation"
+  },
+  {
+    "objectID": "posts/mixpanel-implementation/index.html#user-education",
+    "href": "posts/mixpanel-implementation/index.html#user-education",
+    "title": "End-to-end implementation of Mixpanel for self-service product analytics",
+    "section": "User education",
+    "text": "User education\nI held a number of training sessions with the Product, Customer Success and Leadership team to onboard them to the new tools. The training sessions were hands-on, and accompanied by mini-homeworks and documentations to ensure understanding."
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "End-to-end implementation of Mixpanel for self-service product analytics\n\n\n\n\n\n\ncase studies\n\n\n\n\n\n\n\n\n\nLinh Ngo\n\n\n\n\n\n\n\n\n\n\n\n\nBuilding a R package for exploratory visualisation of preferential data\n\n\n\n\n\n\ncase studies\n\n\n\nThere is no exploratory tool for preferential data, so I built one.\n\n\n\n\n\nLinh Ngo\n\n\n\n\n\n\n\n\n\n\n\n\nAre you paying higher rent for better security in Melbourne?\n\n\n\n\n\n\nanalysis\n\n\n\nI developed a Price-to-Safety index to compare the safety and affordability of suburbs in Melbourne when it comes to rental.\n\n\n\n\n\nLinh Ngo\n\n\n\n\n\n\n\n\n\n\n\n\nAuditing elderly accessibility of MTR stations in Hong Kong\n\n\n\n\n\n\nanalysis\n\n\n\nWhich MTR stations needs improvement to better accomodate the ageing population in Hong Kong? I developed an assessment framework to evaluate how well MTR stations serve elderly population.\n\n\n\n\n\nLinh Ngo\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Linh Ngo",
+    "section": "",
+    "text": "I build data systems and business processes that connect business strategy with execution — from designing analytics pipelines, data models, and dashboards that drive measurable impact, to building and optimizing team operations.\n\n\nProfessionally, my work sits at the intersection of data analytics, analytics engineering, and business strategy.\nI’ve built and scaled analytics in fintech, SaaS, and consulting - from optimizing data pipelines and implementing self-service analytics at a U.S. tech startup, to leading growth and customer operations at a Vietnamese fintech, and supporting a business transformation for a major bank client.\nPersonally, I’m a long-distance runner, a frequent cafe-goer, a solo traveler, and a journaler. Fun fact: I have solo-travelled around SEA, I finish 13 journals every year on average.\nFind out more about my work through my blogs and github repo.\n\n\n\n\nRelearning and diving deeper into data engineering and pipeline design - exploring how modern data stacks can bridge the gap between technical systems and business impact\nDeveloping new visualization methods to support high-dimensional compositional data through my new R package prefviz\nPursuing my project R1000, where I try to get rejected 1000 times in 2026 to get more comfortable with rejections and more importantly, take myself closer to my career and life goals. (Last updated: 53 rejections by 2026-02-21)\n\n\n\n\n\nLanguages: SQL, Python, R\nTools: dbt, Airbyte, Fivetran, Airflow, Git, Power BI, Tableau, Google Data Studio\nCloud: Snowflake, Azure Data Factory\nSkills: ELT & data modelling, CI/CD for pipelines, data quality monitoring, and metric standardization"
+  },
+  {
+    "objectID": "index.html#hi-im-linh",
+    "href": "index.html#hi-im-linh",
+    "title": "Linh Ngo",
+    "section": "",
+    "text": "I build data systems and business processes that connect business strategy with execution — from designing analytics pipelines, data models, and dashboards that drive measurable impact, to building and optimizing team operations.\n\n\nProfessionally, my work sits at the intersection of data analytics, analytics engineering, and business strategy.\nI’ve built and scaled analytics in fintech, SaaS, and consulting - from optimizing data pipelines and implementing self-service analytics at a U.S. tech startup, to leading growth and customer operations at a Vietnamese fintech, and supporting a business transformation for a major bank client.\nPersonally, I’m a long-distance runner, a frequent cafe-goer, a solo traveler, and a journaler. Fun fact: I have solo-travelled around SEA, I finish 13 journals every year on average.\nFind out more about my work through my blogs and github repo.\n\n\n\n\nRelearning and diving deeper into data engineering and pipeline design - exploring how modern data stacks can bridge the gap between technical systems and business impact\nDeveloping new visualization methods to support high-dimensional compositional data through my new R package prefviz\nPursuing my project R1000, where I try to get rejected 1000 times in 2026 to get more comfortable with rejections and more importantly, take myself closer to my career and life goals. (Last updated: 53 rejections by 2026-02-21)\n\n\n\n\n\nLanguages: SQL, Python, R\nTools: dbt, Airbyte, Fivetran, Airflow, Git, Power BI, Tableau, Google Data Studio\nCloud: Snowflake, Azure Data Factory\nSkills: ELT & data modelling, CI/CD for pipelines, data quality monitoring, and metric standardization"
+  },
+  {
+    "objectID": "posts/prefviz/index.html",
+    "href": "posts/prefviz/index.html",
+    "title": "Building a R package for exploratory visualisation of preferential data",
+    "section": "",
+    "text": "I recently explored the world of computational statistics, or put it simply, building softwares that implement statistical theories. For me, it was building new visualization methods and softwares that can help me better understand the data I’m working with.\nprefviz is a new R package for interactively explore preferential data. Preferential data is data that expresses individuals preferences over a set of items, i.e., voters rank candidates in a ballot paper, customers rank product preference, atheletes are ranked in a tournament, etc.\nThe primary example I used for the package and my successive analysis is the Australian election, where voters rank their preferences for candidates from the highest to the lowest.\nWhy I built prefviz?\n\nI found no existing R package that can help me explore the general structure of preferential data. The only found was not working properly, and the rest of related preferential packages are for outputs of their statistical models. However, how can one build a high-performing model without knowing the structure of the data?\nI want to compare many sets of preferences with each other, more than 100 sets. However, using the traditional visualization of bar plots mean I need to draw as many plot as there are sets of preferences, meaning more than 100 plots. How can one compare 100 plots with each other?\nI need a high-dimensional visualisation tool to explore the competition between many options in a single set of preferences. The existing workflow is rather inconvenient, and there are some presets I can package in functions so that I don’t need to re-write the code.\n\nWhat I built\nTake the context of the Australian Federal Election, in which we have 150 electorates, each having their own election. Normally, we would have to draw 150 bar plots to compare the preferences of each electorate. However, a ternary plot can turn these 150 plots into 150 points in a shared space, and we can compare the preference structure of these electorates simply by comparing their positions on the ternary plot.\nThis is how to read a ternary plot:\n\nThe position of the points is made up of 3 percentages, summing up to 100%. These percentages represent how much each option is preferred by the points.\nThe closer the points are to one of the vertices/corners, the higher the preference percentage towards that option.\nThere are 3 separate regions on the plot called majority region. Points falling into the majority region have the majority preference towards the corresponding option.\n\n\n\nVideo\nThis is a ternary plot created using prefviz. You can make the points interactive to read the plots more easily.\n\n\nOf course, there are more than 3 parties in the election. High-dimensional ternary plots arises to solve the problem. Simply put, all the points are living in a high-dimensional space, whose positions are made of the preferences of all the parties. However, human eyes can only perceive up to 3 dimensions, so we need to project the points into a lower-dimensional space using a tour projection method. Just like how you inspect an exhibit in a museum by walking around and looking at its different angles, the tour method literally gives you a tour around different angles/projections of the object, through which you hopefully can see the object structure.\n\n\nVideo\nThis is a high-dimensional ternary plot created using prefviz. You can specify how you want it to rotate, rotate the object by click and drag, pause and resume the rotation, and even hover to the points to learn more\n\n\nThere are more than just ternary plots in the package\nYou can also create a pairwise matrix of preference or quickly plot a preference distribution without much transformations because prefviz handles these transformations for you.\n \nMore about prefviz\nFind out more about the package and its features via:\n\nprefviz website\nprefviz presentation"
   }
 ]

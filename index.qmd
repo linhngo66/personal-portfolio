@@ -14,7 +14,7 @@ about:
       href: https://www.linkedin.com/in/thuy-linh-ngo/
     - text: Email
       icon: envelope
-      href: mailto:linhngo66@gmail.com
+      href: mailto:linhngo66.work@gmail.com
 ---
 
 ## Hi, I’m Linh 
