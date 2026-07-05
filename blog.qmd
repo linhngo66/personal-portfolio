@@ -1,14 +1,17 @@
 ---
 title: "Blog"
 listing:
-  contents: 
-    - "posts/*/index.qmd"
+  contents:
+    - "posts/mixpanel-implementation/index.qmd"
+    - "posts/prefviz/index.qmd"
+    - "posts/price_to_safety_index_melb/index.qmd"
     - path: "https://github.com/linhngo66/MTR-station-accessibility-audit"
       title: "Auditing elderly accessibility of MTR stations in Hong Kong"
       description: "Which MTR stations needs improvement to better accomodate the ageing population in Hong Kong? I developed an assessment framework to evaluate how well MTR stations serve elderly population."
       image: mtr_station_profile.png
       author: Linh Ngo
       categories: [analysis]
+  sort: false
   type: default
   categories: numbered
   fields: [image, title, description, categories, author]
