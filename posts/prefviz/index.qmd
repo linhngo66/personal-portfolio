@@ -40,6 +40,7 @@ Of course, there are more than 3 parties in the election. High-dimensional terna
 You can also create a pairwise matrix of preference or quickly plot a preference distribution without much transformations because `prefviz` handles these transformations for you.
 
 ![This plot answers questions like: Is there any options that win against all others?](pairwise-heatmap.png)
+
 ![A quick preference distribution plot](nat_bar.png)
 
 **More about `prefviz`**
