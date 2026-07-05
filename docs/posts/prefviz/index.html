@@ -111,7 +111,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="mailto:linhngo66.work@gmail.com"> <i class="bi bi-envelope" role="img">
+    <a class="nav-link" href="mailto:linhngo66@gmail.com"> <i class="bi bi-envelope" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -167,15 +167,14 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p>I recently explored the world of computational statistics, or put it simply, building softwares that implement statistical theories. For me, it was <strong>building new visualization methods and softwares</strong> that can help me better understand the data I’m working with.</p>
-<p><a href="https://numbats.github.io/prefviz/"><code>prefviz</code></a> is a new R package for interactively explore preferential data. Preferential data is data that expresses individuals preferences over a set of items, i.e., voters rank candidates in a ballot paper, customers rank product preference, atheletes are ranked in a tournament, etc.</p>
-<p>The primary example I used for the package and my successive analysis is the Australian election, where voters rank their preferences for candidates from the highest to the lowest.</p>
+<p><a href="https://numbats.github.io/prefviz/"><code>prefviz</code></a> is a new R package for interactively explore preferential data. Preferential data is data that expresses individuals preferences over a set of items, i.e., voters rank candidates in a ballot paper, customers rank product preference, atheletes are ranked in a tournament, etc. The primary example I used for the package and my successive analysis is the Australian election, where voters rank their preferences for candidates from the highest to the lowest.</p>
 <p><strong>Why I built <code>prefviz</code>?</strong></p>
 <ul>
 <li>I found no existing R package that can help me explore the general structure of preferential data. The only found was not working properly, and the rest of related preferential packages are for outputs of their statistical models. However, how can one build a high-performing model without knowing the structure of the data?</li>
 <li>I want to compare <em>many</em> sets of preferences with each other, more than 100 sets. However, using the traditional visualization of bar plots mean I need to draw as many plot as there are sets of preferences, meaning more than 100 plots. How can one compare 100 plots with each other?</li>
 <li>I need a high-dimensional visualisation tool to explore the competition between many options in a single set of preferences. The existing workflow is rather inconvenient, and there are some presets I can package in functions so that I don’t need to re-write the code.</li>
 </ul>
-<p><strong>What I built</strong></p>
+<p><strong>What I built?</strong></p>
 <p>Take the context of the Australian Federal Election, in which we have 150 electorates, each having their own election. Normally, we would have to draw 150 bar plots to compare the preferences of each electorate. However, a ternary plot can turn these 150 plots into 150 points in a shared space, and we can compare the preference structure of these electorates simply by comparing their positions on the ternary plot.</p>
 <p>This is how to read a ternary plot:</p>
 <ol type="1">
@@ -198,7 +197,18 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <p><strong>There are more than just ternary plots in the package</strong></p>
 <p>You can also create a pairwise matrix of preference or quickly plot a preference distribution without much transformations because <code>prefviz</code> handles these transformations for you.</p>
-<p><img src="pairwise-heatmap.png" class="img-fluid" alt="This plot answers questions like: Is there any options that win against all others?"> <img src="nat_bar.png" class="img-fluid" alt="A quick preference distribution plot"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="pairwise-heatmap.png" class="img-fluid figure-img"></p>
+<figcaption>This plot answers questions like: Is there any options that win against all others?</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="nat_bar.png" class="img-fluid figure-img"></p>
+<figcaption>A quick preference distribution plot</figcaption>
+</figure>
+</div>
 <p><strong>More about <code>prefviz</code></strong></p>
 <p>Find out more about the package and its features via:</p>
 <ul>

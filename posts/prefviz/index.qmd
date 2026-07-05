@@ -17,7 +17,7 @@ I recently explored the world of computational statistics, or put it simply, bui
 - I want to compare *many* sets of preferences with each other, more than 100 sets. However, using the traditional visualization of bar plots mean I need to draw as many plot as there are sets of preferences, meaning more than 100 plots. How can one compare 100 plots with each other?
 - I need a high-dimensional visualisation tool to explore the competition between many options in a single set of preferences. The existing workflow is rather inconvenient, and there are some presets I can package in functions so that I don't need to re-write the code.
 
-**What I built**
+**What I built?**
 
 Take the context of the Australian Federal Election, in which we have 150 electorates, each having their own election. Normally, we would have to draw 150 bar plots to compare the preferences of each electorate. However, a ternary plot can turn these 150 plots into 150 points in a shared space, and we can compare the preference structure of these electorates simply by comparing their positions on the ternary plot.
 
