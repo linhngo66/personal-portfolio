@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Linh Ngo">
+<meta name="dcterms.date" content="2026-10-01">
+<meta name="description" content="A Power BI dashboard of National Student Survey results for 433 UK providers, showing where students are less positive than expected and which groups are affected most.">
 
-<title>Blog – Linh Ngo</title>
+<title>Where UK universities fall short: an NSS benchmark dashboard – Linh Ngo</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +26,25 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-df09ee7639194c170e351a33ef60904b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-df09ee7639194c170e351a33ef60904b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,77 +72,19 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-image','listing-title','listing-description','listing-categories','listing-author',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Linh Ngo</span>
     </a>
   </div>
@@ -149,11 +95,11 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./blog.html" aria-current="page"> 
+    <a class="nav-link" href="../../blog.html"> 
 <span class="menu-text">My work</span></a>
   </li>  
 </ul>
@@ -181,201 +127,187 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Where UK universities fall short: an NSS benchmark dashboard</h1>
+                  <div>
+        <div class="description">
+          A Power BI dashboard of National Student Survey results for 433 UK providers, showing where students are less positive than expected and which groups are affected most.
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">case studies</div>
+                <div class="quarto-category">Power BI</div>
+                <div class="quarto-category">R</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Linh Ngo </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">October 1, 2026</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(5)</span></div><div class="category" data-category="UG93ZXIlMjBCSQ==">Power BI <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Ug==">R <span class="quarto-category-count">(1)</span></div><div class="category" data-category="YW5hbHlzaXM=">analysis <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Y2FzZSUyMHN0dWRpZXM=">case studies <span class="quarto-category-count">(3)</span></div></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#the-scenario" id="toc-the-scenario" class="nav-link active" data-scroll-target="#the-scenario">The scenario</a></li>
+  <li><a href="#executive-summary" id="toc-executive-summary" class="nav-link" data-scroll-target="#executive-summary">Executive summary</a></li>
+  <li><a href="#data-metrics-and-approach" id="toc-data-metrics-and-approach" class="nav-link" data-scroll-target="#data-metrics-and-approach">Data, metrics and approach</a></li>
+  <li><a href="#the-dashboard" id="toc-the-dashboard" class="nav-link" data-scroll-target="#the-dashboard">The dashboard</a></li>
+  <li><a href="#assumptions-and-decisions" id="toc-assumptions-and-decisions" class="nav-link" data-scroll-target="#assumptions-and-decisions">Assumptions and decisions</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Blog</h1>
-</div>
-
-
-
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
 
+<blockquote class="blockquote">
+<p><strong>TL;DR.</strong> I turned the UK Office for Students (OfS)’ National Student Survey (NSS) provider-level release into a star-schema Power BI dashboard. It answers one question for any provider, subject, study mode or level of study: <strong>where are students less positive than expected, and how many students does that gap affect?</strong></p>
+</blockquote>
+<p><a href="https://drive.google.com/file/d/1OMazN9uhBqr9OlCro-XcBRCRmQ0mPWM7/view?usp=sharing"><strong>View the dashboard</strong></a> | <a href="https://github.com/linhngo66/nss-dashboard"><strong>Code on GitHub</strong></a> | <a href="https://www.officeforstudents.org.uk/data-and-analysis/national-student-survey-data/"><strong>Data source (OfS)</strong></a></p>
+<section id="the-scenario" class="level2">
+<h2 class="anchored" data-anchor-id="the-scenario">The scenario</h2>
+<p>Imagine you’re on a university’s student experience team. The NSS results come out every year, and you want to know where your students are less happy than they should be, and where to start fixing things.</p>
+<p>The questions I set out to answer:</p>
+<ol type="1">
+<li>How are we doing against our benchmarks overall, and in which areas?</li>
+<li>Which subjects are falling behind, and is it a problem across the board or in one area?</li>
+<li>Within each area, which questions are dragging the score down?</li>
+<li>Do full-time, part-time and apprenticeship students have a different experience?</li>
+<li>Which gaps affect the most students, and where are we already doing well?</li>
+</ol>
+<p>The data is the OfS NSS 2025 provider-level release: 433 providers, 163 subjects, and undergraduates studying full-time, part-time or through an apprenticeship. Every result comes with an OfS benchmark, which is the score you’d expect given that provider’s mix of subjects and students. That’s what makes fair comparisons possible.</p>
+</section>
+<section id="executive-summary" class="level2">
+<h2 class="anchored" data-anchor-id="executive-summary">Executive summary</h2>
+<p>I built a Power BI dashboard that compares every result with its benchmark. It has five pages you can filter by provider, mode, level, theme and subject, plus two drill-through pages for a closer look at a single subject or question.</p>
+<p>Key findings:</p>
+<ul>
+<li><strong>Organisation and management is the weakest area.</strong> It’s the theme furthest below benchmark, and part-time students feel it most. Courses not being well organised and changes not being communicated well are the two questions pulling it down.</li>
+<li><strong>A handful of subjects do much worse than the rest.</strong> They tend to sit in social sciences, education and healthcare.</li>
+<li><strong>Part-time students have the worst experience, and apprentices the best.</strong> That holds in every theme: part-time students are below benchmark across the board, and apprentices are above it.</li>
+<li>Across the sector, 83.3% of students answer positively and 72.6% took part in the survey. Most results (72.7%) are in line with benchmark, with 13.5% above and 13.8% below.</li>
+</ul>
+</section>
+<section id="data-metrics-and-approach" class="level2">
+<h2 class="anchored" data-anchor-id="data-metrics-and-approach">Data, metrics and approach</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><strong>Data</strong></td>
+<td>190,235 published results (provider × subject × level × mode × question), plus 17,941 provider-wide totals</td>
+</tr>
+<tr class="even">
+<td><strong>Metrics</strong></td>
+<td>Positivity (share of students picking one of the top two answers), benchmark, difference from benchmark with a 95% confidence interval, response rate, and estimated students below benchmark</td>
+</tr>
+<tr class="odd">
+<td><strong>Tools</strong></td>
+<td>R (tidyverse, arrow) for cleaning, and Power BI (Power Query, DAX, PBIP) for the model and report</td>
+</tr>
+</tbody>
+</table>
+<p>How I got there:</p>
+<ol type="1">
+<li><strong>Cleaned</strong> the two raw files in R into one fact table plus dimension tables.</li>
+<li><strong>Modelled</strong> them as a star schema in Power BI, with subject-level results and provider totals sharing the same provider, mode, level, subject and question dimensions.</li>
+<li><strong>Built</strong> one page per business question, with slicers that stay in sync across pages and drill-throughs for detail.</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/star-schema.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="The star schema behind the report."><img src="images/star-schema.png" class="img-fluid figure-img" alt="The star schema behind the report."></a></p>
+<figcaption>The star schema behind the report.</figcaption>
+</figure>
+</div>
+</section>
+<section id="the-dashboard" class="level2">
+<h2 class="anchored" data-anchor-id="the-dashboard">The dashboard</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/overview.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Overview. The headline numbers, and how each theme and question compares with its benchmark."><img src="images/overview.png" class="img-fluid figure-img" alt="Overview. The headline numbers, and how each theme and question compares with its benchmark."></a></p>
+<figcaption><strong>Overview.</strong> The headline numbers, and how each theme and question compares with its benchmark.</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/subject.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Subject. Which subjects are above or below benchmark, broken down by theme, so you can tell a subject-wide problem from a one-off."><img src="images/subject.png" class="img-fluid figure-img" alt="Subject. Which subjects are above or below benchmark, broken down by theme, so you can tell a subject-wide problem from a one-off."></a></p>
+<figcaption><strong>Subject.</strong> Which subjects are above or below benchmark, broken down by theme, so you can tell a subject-wide problem from a one-off.</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/theme.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="Theme. The questions behind each theme, and how strongly students agree (“definitely” versus “mostly”)."><img src="images/theme.png" class="img-fluid figure-img" alt="Theme. The questions behind each theme, and how strongly students agree (“definitely” versus “mostly”)."></a></p>
+<figcaption><strong>Theme.</strong> The questions behind each theme, and how strongly students agree (“definitely” versus “mostly”).</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/student.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5" title="Student. How full-time, part-time and apprenticeship students compare, and the same by level of study, each against its own benchmark."><img src="images/student.png" class="img-fluid figure-img" alt="Student. How full-time, part-time and apprenticeship students compare, and the same by level of study, each against its own benchmark."></a></p>
+<figcaption><strong>Student.</strong> How full-time, part-time and apprenticeship students compare, and the same by level of study, each against its own benchmark.</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/priority.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6" title="Priority. The gaps that affect the most students, next to the places already doing better than expected."><img src="images/priority.png" class="img-fluid figure-img" alt="Priority. The gaps that affect the most students, next to the places already doing better than expected."></a></p>
+<figcaption><strong>Priority.</strong> The gaps that affect the most students, next to the places already doing better than expected.</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/subject-detail.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7" title="Subject detail. Everything about one subject: every question, mode and level."><img src="images/subject-detail.png" class="img-fluid figure-img" alt="Subject detail. Everything about one subject: every question, mode and level."></a></p>
+<figcaption><strong>Subject detail.</strong> Everything about one subject: every question, mode and level.</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/question-detail.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8" title="Question detail. One question across every subject, mode and level."><img src="images/question-detail.png" class="img-fluid figure-img" alt="Question detail. One question across every subject, mode and level."></a></p>
+<figcaption><strong>Question detail.</strong> One question across every subject, mode and level.</figcaption>
+</figure>
+</div>
+</section>
+<section id="assumptions-and-decisions" class="level2">
+<h2 class="anchored" data-anchor-id="assumptions-and-decisions">Assumptions and decisions</h2>
+<ul>
+<li><strong>Benchmarks, not raw scores.</strong> Providers have very different subject mixes and students, so I judge results by how far they are from benchmark, not by who scores highest.</li>
+<li><strong>Above or below only when it’s clear-cut.</strong> Following the OfS approach, a result only counts as above or below benchmark when it passes the confidence test. Everything else is in line.</li>
+<li><strong>“Students below benchmark” is about scale, not headcount.</strong> It’s the population multiplied by the gap, added up over questions, so one student can be counted on several questions.</li>
+</ul>
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="Y2FzZSUyMHN0dWRpZXMlMkNQb3dlciUyMEJJJTJDUg==" data-listing-date-sort="1790776800000" data-listing-file-modified-sort="1790816595835" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="702">
-<div class="thumbnail">
-<p><a href="./posts/nss-dashboard/index.html" class="no-external"></a></p><a href="./posts/nss-dashboard/index.html" class="no-external">
-<p><img loading="lazy" src="./posts/nss-dashboard/images/overview.png" class="thumbnail-image"></p>
-</a><p><a href="./posts/nss-dashboard/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/nss-dashboard/index.html" class="no-external">Where UK universities fall short: an NSS benchmark dashboard</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/nss-dashboard/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Y2FzZSUyMHN0dWRpZXM='); return false;">
-case studies
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('UG93ZXIlMjBCSQ=='); return false;">
-Power BI
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Ug=='); return false;">
-R
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/nss-dashboard/index.html" class="no-external">A Power BI dashboard of National Student Survey results for 433 UK providers, showing where students are less positive than expected and which groups are affected most.</a>
-</div>
-</div>
-<div class="metadata">
-<p><a href="./posts/nss-dashboard/index.html" class="no-external"></a></p><a href="./posts/nss-dashboard/index.html" class="no-external">
-<div class="listing-author">
-Linh Ngo
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="Y2FzZSUyMHN0dWRpZXM=" data-listing-file-modified-sort="1771910361316" data-listing-reading-time-sort="5" data-listing-word-count-sort="866">
-<div class="thumbnail">
-<p><a href="./posts/mixpanel-implementation/index.html" class="no-external"></a></p><a href="./posts/mixpanel-implementation/index.html" class="no-external">
-<p><img loading="lazy" src="./posts/mixpanel-implementation/images/thumbnail.png" class="thumbnail-image"></p>
-</a><p><a href="./posts/mixpanel-implementation/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/mixpanel-implementation/index.html" class="no-external">End-to-end implementation of Mixpanel for self-service product analytics</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/mixpanel-implementation/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Y2FzZSUyMHN0dWRpZXM='); return false;">
-case studies
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/mixpanel-implementation/index.html" class="no-external">This is how I helped Otrafy’s CEO, who is my career role model to this day, provide complete visibility into user behavior and retention, and empower non-technical users to…</a>
-</div>
-</div>
-<div class="metadata">
-<p><a href="./posts/mixpanel-implementation/index.html" class="no-external"></a></p><a href="./posts/mixpanel-implementation/index.html" class="no-external">
-<div class="listing-author">
-Linh Ngo
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="Y2FzZSUyMHN0dWRpZXM=" data-listing-file-modified-sort="1783241214076" data-listing-reading-time-sort="4" data-listing-word-count-sort="641">
-<div class="thumbnail">
-<p><a href="./posts/prefviz/index.html" class="no-external"></a></p><a href="./posts/prefviz/index.html" class="no-external">
-<p><img loading="lazy" src="./posts/prefviz/prefviz-sticker.png" class="thumbnail-image"></p>
-</a><p><a href="./posts/prefviz/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/prefviz/index.html" class="no-external">Building a R package for exploratory visualisation of preferential data</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/prefviz/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Y2FzZSUyMHN0dWRpZXM='); return false;">
-case studies
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/prefviz/index.html" class="no-external">There is no exploratory tool for preferential data, so I built one.</a>
-</div>
-</div>
-<div class="metadata">
-<p><a href="./posts/prefviz/index.html" class="no-external"></a></p><a href="./posts/prefviz/index.html" class="no-external">
-<div class="listing-author">
-Linh Ngo
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="YW5hbHlzaXM=" data-listing-file-modified-sort="1771914094990" data-listing-reading-time-sort="16" data-listing-word-count-sort="3151">
-<div class="thumbnail">
-<p><a href="./posts/price_to_safety_index_melb/index.html" class="no-external"></a></p><a href="./posts/price_to_safety_index_melb/index.html" class="no-external">
-<p><img loading="lazy" src="./posts/price_to_safety_index_melb/melb_sa2_abs.png" class="thumbnail-image"></p>
-</a><p><a href="./posts/price_to_safety_index_melb/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/price_to_safety_index_melb/index.html" class="no-external">Are you paying higher rent for better security in Melbourne?</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/price_to_safety_index_melb/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('YW5hbHlzaXM='); return false;">
-analysis
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/price_to_safety_index_melb/index.html" class="no-external">I developed a Price-to-Safety index to compare the safety and affordability of suburbs in Melbourne when it comes to rental.</a>
-</div>
-</div>
-<div class="metadata">
-<p><a href="./posts/price_to_safety_index_melb/index.html" class="no-external"></a></p><a href="./posts/price_to_safety_index_melb/index.html" class="no-external">
-<div class="listing-author">
-Linh Ngo
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-categories="YW5hbHlzaXM=">
-<div class="thumbnail">
-<p><a href="https://github.com/linhngo66/MTR-station-accessibility-audit" class="no-external"></a></p><a href="https://github.com/linhngo66/MTR-station-accessibility-audit" class="no-external">
-<p><img loading="lazy" src="mtr_station_profile.png" class="thumbnail-image"></p>
-</a><p><a href="https://github.com/linhngo66/MTR-station-accessibility-audit" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="https://github.com/linhngo66/MTR-station-accessibility-audit" class="no-external">Auditing elderly accessibility of MTR stations in Hong Kong</a>
-</h3>
-<div class="listing-subtitle">
-<a href="https://github.com/linhngo66/MTR-station-accessibility-audit" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('YW5hbHlzaXM='); return false;">
-analysis
-</div>
-</div>
-<div class="listing-description">
-<a href="https://github.com/linhngo66/MTR-station-accessibility-audit" class="no-external">Which MTR stations needs improvement to better accomodate the ageing population in Hong Kong? I developed an assessment framework to evaluate how well MTR stations serve elderly population.</a>
-</div>
-</div>
-<div class="metadata">
-<p><a href="https://github.com/linhngo66/MTR-station-accessibility-audit" class="no-external"></a></p><a href="https://github.com/linhngo66/MTR-station-accessibility-audit" class="no-external">
-<div class="listing-author">
-Linh Ngo
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -794,6 +726,38 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 
