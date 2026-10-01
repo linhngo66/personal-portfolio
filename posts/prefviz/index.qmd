@@ -1,7 +1,7 @@
 ---
 title: "Building a R package for exploratory visualisation of preferential data"
 description: "There is no exploratory tool for preferential data, so I built one."
-author: Linh Ngo
+author: Lindsey Ngo
 categories: case studies
 image: "prefviz-sticker.png"
 toc: true

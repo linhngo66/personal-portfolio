@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this is
 
-A [Quarto](https://quarto.org) website: Linh Ngo's personal portfolio/blog. Content is authored in `.qmd` files (Markdown + optional embedded R code chunks) and rendered to static HTML.
+A [Quarto](https://quarto.org) website: Lindsey Ngo's personal portfolio/blog. Content is authored in `.qmd` files (Markdown + optional embedded R code chunks) and rendered to static HTML.
 
 ## Commands
 

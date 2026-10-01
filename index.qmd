@@ -1,5 +1,5 @@
 ---
-title: "Linh Ngo"
+title: "Lindsey Ngo"
 image: profile.jpg
 about:
   template: trestles
@@ -17,7 +17,7 @@ about:
       href: mailto:linhngo66.work@gmail.com
 ---
 
-## Hi, I’m Linh 
+## Hi, I’m Lindsey 
 
 I build **data systems and business processes that connect business strategy with execution** — from designing analytics pipelines, data models, and dashboards that drive measurable impact, to building and optimizing team operations. 
 

@@ -6,7 +6,7 @@ project:
     - "!CLAUDE.md"
 
 website:
-  title: "Linh Ngo"
+  title: "Lindsey Ngo"
   navbar:
     left:
       - text: "Home"
