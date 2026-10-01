@@ -2,7 +2,7 @@
 title: "Where UK universities fall short: an NSS benchmark dashboard"
 description: "A Power BI dashboard of National Student Survey results for 433 UK providers, showing where students are less positive than expected and which groups are affected most."
 author: Linh Ngo
-categories: [case studies, Power BI, R]
+categories: [analysis, Power BI, R]
 image: "images/overview.png"
 toc: true
 fig-cap-location: bottom
